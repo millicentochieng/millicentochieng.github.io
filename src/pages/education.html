@@ -6,7 +6,7 @@
     <link href="../dist/output.css" rel="stylesheet" />
     <title>Millicent Ochieng</title>
   </head>
-  <body>
+  <body class="relative h-full">
     <div class="relative mx-auto max-w-7xl">
       <header class="sticky top-0">
         <nav class="bg-white p-5">
@@ -15,7 +15,7 @@
               <!-- logo -->
               <div class="flex">
                 <a
-                  href="#"
+                  href="index.html"
                   class="mr-3 cursor-pointer px-3 py-5 text-xl font-semibold"
                 >
                   Millicent <span class="font-light">Ochieng</span>
@@ -28,9 +28,7 @@
                   href="./news.html"
                   >News</a
                 >
-                <a
-                  class="py-5 text-black hover:text-gray-500"
-                  href="./education.html"
+                <a class="py-5 text-black hover:text-gray-500" href="#"
                   >Education</a
                 >
                 <a
@@ -79,39 +77,40 @@
         </nav>
       </header>
       <!-- //write a section with an image, a section with content and the footer -->
-      <section class="m-10 flex items-center">
-        <img
-          class="w-45"
-          src="../images/bg1-text.png"
-          alt="change the world through data"
-        />
-      </section>
-      <section class="flex space-x-12">
-        <div class="">
-          <img class="rounded-3xl" src="../images/profile.jpg" alt="" />
+      <section class="m-10 flex flex-col">
+        <div class="flex text-2xl">
+          <p>Education</p>
+          <div class="mx-6 border-2 border-solid border-r-black"></div>
+          <p>This is my academic background</p>
         </div>
-        <div class="rounded-3xl border bg-slate-100 p-5 text-lg">
-          <p class="mb-2 text-3xl">About Me</p>
-          <p class="leading-10">
-            I am a Data & Applied Scientist at the Microsoft Africa Research
-            Institute (MARI) - Microsoft Research working on Big Data analytics
-            and ML/AI research. In my research, I’m passionate about designing
-            brilliant, impactful solutions to challenging real-world problems,
-            using the state-of-the-art approaches in ML/ AI. My current research
-            interests revolve around Natural Language Processing (NLP), Machine
-            Learning and Computer Vision, and their applications in Healthcare,
-            New Future of Work and Society & Sustainability.
-          </p>
-          <p class="mt-5 leading-10">
-            Prior to joining Microsoft, I was a research intern at the Institute
-            for Applied Computational Science at Harvard University working on
-            NLP and Computer Vision Research.
-          </p>
-          <a class="mt-8 block font-bold underline" href="">Download my cv</a>
+        <div class="mt-5">
+          <ul class="rounded-3xl border bg-slate-100 p-6">
+            <li class="mb-5 flex flex-auto content-between">
+              <span class="mr-14 w-10 text-slate-500">2022 MSc.</span>
+              <p class="inline justify-center font-semibold leading-7">
+                Data Science, African Center of Excellence in Data Science -
+                University of Rwanda. Research: Transfer learning for
+                classification of bean plant leaf diseases in precision
+                agriculture, advised by Dr. Weiwei Pan, Assistant Director for
+                Graduate Studies in Data Science, ML Researcher, Harvard
+                University and Dr. Melanie Fernandez Pradier, Senior Researcher
+                at Microsoft Research
+              </p>
+            </li>
+            <li class="mb-5 flex">
+              <span class="mr-14 w-10 text-slate-500">2018 BSc.</span>
+              <p class="inline justify-center font-semibold leading-7">
+                2018: BSc. Applied Statistics with Computing in Moi University,
+                Kenya.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
     </div>
-    <footer class="mt-7 h-60 w-full bg-gray-900 p-4 text-white md:px-6 md:py-8">
+    <footer
+      class="fixed bottom-0 mt-7 h-60 w-full bg-gray-900 p-4 text-white md:px-6 md:py-8"
+    >
       <div class="relative mx-auto max-w-7xl">
         <div class="sm:flex sm:items-center sm:justify-between">
           <p class="mr-3 cursor-pointer px-3 py-5 text-xl font-semibold">

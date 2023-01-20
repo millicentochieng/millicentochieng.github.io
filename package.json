@@ -4,7 +4,7 @@
   "description": "This repo is about my webpage.",
   "main": "index.js",
   "scripts": {
-    "build": ""
+    "watch": "npx tailwindcss -i ./src/css/input.css -o ./src/dist/output.css --watch"
   },
   "repository": {
     "type": "git",

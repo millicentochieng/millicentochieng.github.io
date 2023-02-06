@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../dist/output.css" rel="stylesheet" />
     <title>Millicent Ochieng</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="relative h-full">
+  <body class="relative h-full bg-[#e8edf5] text-[#ad8736]">
     <div class="relative mx-auto max-w-7xl">
       <header class="sticky top-0">
-        <nav class="bg-white p-5">
+        <nav class="bg-[#e8edf5] p-5">
           <div class="px-4">
             <div class="flex justify-between">
               <!-- logo -->
@@ -23,24 +24,17 @@
               </div>
               <!-- primary nav -->
               <div class="hidden items-center space-x-12 md:flex">
-                <a
-                  class="py-5 text-black hover:text-gray-500"
-                  href="./news.html"
-                  >News</a
+                <a class="py-5 hover:text-gray-500" href="./about.html"
+                  >About</a
                 >
-                <a
-                  class="py-5 text-black hover:text-gray-500"
-                  href="./education.html"
+                <a class="py-5 hover:text-gray-500" href="./news.html">News</a>
+                <a class="py-5 hover:text-gray-500" href="./education.html"
                   >Education</a
                 >
-                <a
-                  class="py-5 text-black hover:text-gray-500"
-                  href="./publications.html"
+                <a class="py-5 hover:text-gray-500" href="./publications.html"
                   >Publications</a
                 >
-                <a class="active py-5 text-black" href="./community.html"
-                  >Community</a
-                >
+                <a class="active py-5" href="./community.html">Community</a>
               </div>
               <div class="flex items-center md:hidden">
                 <button class="mobile-menu-button">
@@ -77,12 +71,14 @@
         </nav>
       </header>
       <!-- //write a section with an image, a section with content and the footer -->
-      <section class="m-10 flex flex-col">
+      <section class="m-10 flex max-w-7xl flex-col">
         <div>
-          <span class="font-lg mb-4 block text-center font-bold"
+          <span class="mb-4 block text-center text-4xl font-bold"
             >Microsoft Africa Research Institute (MARI)</span
           >
-          <p class="card">
+          <p
+            class="mx-auto mb-10 p-6 text-justify text-2xl font-semibold text-[#092b49]"
+          >
             I am the organizer of MARI monthly seminars where we invite
             researchers to talk about their interesting works in Artificial
             Intelligence (AI) and Human Computer Interaction (HCI) in/outside
@@ -92,14 +88,20 @@
               href="https://www.microsoft.com/en-us/research/group/microsoft-africa-research-institute-mari/seminars/"
               >here</a
             >
-            and sign up to receive calendar invites for future Seminars.
+            and
+            <a class="link" href="https://forms.office.com/r/etbgMACK1U"
+              >sign up</a
+            >
+            to receive calendar invites for future Seminars.
           </p>
         </div>
         <div>
-          <span class="font-lg mb-4 block text-center font-bold"
+          <span class="mb-4 block text-center text-4xl font-bold"
             >Women in Data Science (WiDS)</span
           >
-          <p class="card">
+          <p
+            class="mx-auto mb-10 p-6 text-justify text-2xl font-semibold text-[#092b49]"
+          >
             As a
             <a
               class="link"
@@ -129,10 +131,12 @@
           </p>
         </div>
         <div>
-          <span class="font-lg mb-4 block text-center font-bold"
+          <span class="mb-4 block text-center text-4xl font-bold"
             >Masakhane</span
           >
-          <p class="card">
+          <p
+            class="mx-auto mb-10 p-6 text-justify text-2xl font-semibold text-[#092b49]"
+          >
             I am a member of
             <a class="link" href="https://www.masakhane.io/">Masakhane</a> which
             is a grassroot NLP community for Africa, by Africans where I am

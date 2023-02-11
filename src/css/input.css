@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.card {
+  @apply mx-auto mb-10 rounded-3xl p-6;
+}
+
+.link {
+  @apply font-bold underline;
+}
+
+.active {
+  @apply text-gray-500;
+}

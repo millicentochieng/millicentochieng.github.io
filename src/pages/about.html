@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <title>Millicent Ochieng</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#e8edf5] text-[#092b49]">
+    <div class="relative mx-auto max-w-7xl">
+      <header class="sticky top-0 text-[#a7865e]">
+        <nav class="p-5">
+          <div class="px-4">
+            <div class="flex justify-between">
+              <!-- logo -->
+              <div class="flex">
+                <a
+                  href="./index.html"
+                  class="mr-3 cursor-pointer px-3 py-5 text-xl font-semibold"
+                >
+                  Millicent <span class="font-light">Ochieng</span>
+                </a>
+              </div>
+              <!-- primary nav -->
+              <div class="hidden items-center space-x-12 md:flex">
+                <a class="py-5 hover:text-gray-500" href="./about.html"
+                  >About</a
+                >
+                <a class="py-5 hover:text-gray-500" href="./news.html">News</a>
+                <a class="py-5 hover:text-gray-500" href="./education.html"
+                  >Education</a
+                >
+                <a class="py-5 hover:text-gray-500" href="./publications.html"
+                  >Publications</a
+                >
+                <a class="py-5 hover:text-gray-500" href="./community.html"
+                  >Community</a
+                >
+              </div>
+              <div class="flex items-center md:hidden">
+                <button class="mobile-menu-button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="mobile-menu hidden md:hidden">
+              <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
+                >Education</a
+              >
+              <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
+                >Publications</a
+              >
+              <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
+                >Community</a
+              >
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- //write a section with an image, a section with content and the footer -->
+      <!-- <section class="m-10 flex items-center">
+        <img
+          class="w-45"
+          src="../images/bg1-text.png"
+          alt="change the world through data"
+        />
+      </section> -->
+      <section class="my-16 flex flex-col space-x-12 items-center">
+        <div class="">
+          <img
+            class=" rounded-full"
+            src="../images/profile.jpg"
+            alt="Millicent Ochieng"
+            height="300px"
+            width="300px"
+          />
+        </div>
+        <div class="max-w-5xl p-5 text-2xl font-semibold text-justify">
+          <p class="leading-8">
+            I am a Data & Applied Scientist at the Microsoft Africa Research
+            Institute (MARI) - Microsoft Research working on Big Data analytics
+            and ML/AI research. In my research, I’m passionate about designing
+            brilliant, impactful solutions to challenging real-world problems,
+            using the state-of-the-art approaches in ML/ AI. My current research
+            interests revolve around Natural Language Processing (NLP), Machine
+            Learning and Computer Vision, and their applications in Healthcare,
+            New Future of Work and Society & Sustainability.
+          </p>
+          <p class="mt-5 leading-7">
+            Prior to joining Microsoft, I was a research intern at the Institute
+            for Applied Computational Science at Harvard University working on
+            NLP and Computer Vision Research.
+          </p>
+          <a
+            class="mt-8 block font-bold underline"
+            href="https://www.dropbox.com/s/9ga080talgeu9pp/OchiengMillicent_CV.1a.pdf?dl=0"
+            >View my cv</a
+          >
+        </div>
+      </section>
+    </div>
+    <footer class="mt-7 h-60 w-full bg-gray-900 p-4 text-white md:px-6 md:py-8">
+      <div class="relative mx-auto max-w-7xl">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <p class="mr-3 cursor-pointer px-3 py-5 text-xl font-semibold">
+            Millicent <span class="font-light">Ochieng</span> <br />
+            <span class="text-sm font-normal">mochieng@microsoft.com</span>
+          </p>
+
+          <ul class="flex flex-wrap items-center space-x-10">
+            <li>
+              <a href="https://www.linkedin.com/in/millicent-ochieng-b8061a14b/"
+                ><ion-icon class="h-6 w-6" name="logo-linkedin"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/millicentochieng"
+                ><ion-icon class="h-6 w-6" name="logo-github"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/iam_OchiengM"
+                ><ion-icon class="h-6 w-6" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <hr class="mx-auto border-gray-500" />
+        <span class="text-normal mt-5 block text-center">&copy 2023</span>
+      </div>
+    </footer>
+
+    <script>
+      //grab everything we need
+      const btn = document.querySelector(".mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+      //add event listeners
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,5 +1,4 @@
 # millicentochieng.github.io
 
-This repo is about my webpage. 
+This repo is about my [webpage](https://millicentochieng.github.io/src/pages/index.html). 
 
-For more about me please see: https://millicentochieng.github.io/

@@ -28,10 +28,8 @@
                   >About</a
                 >
                 <a class="py-5 hover:text-gray-500" href="./news.html">News</a>
-                <a class="py-5 hover:text-gray-500" href="./education.html"
-                  >Education</a
-                >
-                <a class="active py-5" href="./publications.html"
+                <a class="active py-5" href="#">Education</a>
+                <a class="py-5 hover:text-gray-500" href="./publications.html"
                   >Publications</a
                 >
                 <a class="py-5 hover:text-gray-500" href="./community.html"
@@ -59,13 +57,29 @@
             </div>
             <!-- mobile menu -->
             <div class="mobile-menu hidden md:hidden">
-              <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
+              <a
+                class="block py-2 px-4 text-sm hover:text-gray-500"
+                href="./about.html"
+                >About</a
+              >
+              <a
+                class="block py-2 px-4 text-sm hover:text-gray-500"
+                href="./news.html"
+                >News</a
+              >
+              <a
+                href="./education.html"
+                class="block py-2 px-4 text-sm hover:text-gray-500"
                 >Education</a
               >
-              <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
+              <a
+                href="./publications.html"
+                class="block py-2 px-4 text-sm hover:text-gray-500"
                 >Publications</a
               >
-              <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
+              <a
+                href="./community.html"
+                class="block py-2 px-4 text-sm hover:text-gray-500"
                 >Community</a
               >
             </div>
@@ -75,10 +89,10 @@
       <!-- //write a section with an image, a section with content and the footer -->
       <section class="m-10 flex flex-col">
         <div class="mx-auto mt-5 space-y-10">
-          <div class="flex text-4xl">
+          <div class="flex md:text-4xl text-xl">
             <p class="uppercase tracking-wider">Publications</p>
           </div>
-          <ul class="max-w-7xl rounded-3xl text-2xl font-semibold">
+          <ul class="max-w-7xl rounded-3xl md:text-2xl text-base font-semibold">
             <li class="mb-5 flex">
               <span class="mr-20 w-10">2022 October</span>
               <p
@@ -149,7 +163,7 @@
       class="relative bottom-0 mt-7 h-60 w-full bg-gray-900 p-4 text-white md:px-6 md:py-8"
     >
       <div class="relative mx-auto max-w-7xl">
-        <div class="sm:flex sm:items-center sm:justify-between">
+        <div class="flex sm:items-center sm:justify-between">
           <p class="mr-3 cursor-pointer px-3 py-5 text-xl font-semibold">
             Millicent <span class="font-light">Ochieng</span> <br />
             <span class="text-sm font-normal">mochieng@microsoft.com</span>
@@ -178,15 +192,7 @@
       </div>
     </footer>
 
-    <script>
-      //grab everything we need
-      const btn = document.querySelector(".mobile-menu-button");
-      const menu = document.querySelector(".mobile-menu");
-      //add event listeners
-      btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-    </script>
+    <script src="../js/navbar.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

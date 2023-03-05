@@ -9,7 +9,7 @@
   </head>
   <body class="bg-[#e8edf5] text-[#092b49]">
     <div class="relative mx-auto max-w-7xl">
-      <header class="sticky top-0 text-[#a7865e]">
+      <header class="sticky top-0 bg-[#e8edf5] text-[#a7865e]">
         <nav class="p-5">
           <div class="px-4">
             <div class="flex justify-between">
@@ -59,13 +59,29 @@
             </div>
             <!-- mobile menu -->
             <div class="mobile-menu hidden md:hidden">
-              <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
+              <a
+                class="block py-2 px-4 text-sm hover:text-gray-500"
+                href="./about.html"
+                >About</a
+              >
+              <a
+                class="block py-2 px-4 text-sm hover:text-gray-500"
+                href="./news.html"
+                >News</a
+              >
+              <a
+                href="./education.html"
+                class="block py-2 px-4 text-sm hover:text-gray-500"
                 >Education</a
               >
-              <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
+              <a
+                href="./publications.html"
+                class="block py-2 px-4 text-sm hover:text-gray-500"
                 >Publications</a
               >
-              <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
+              <a
+                href="./community.html"
+                class="block py-2 px-4 text-sm hover:text-gray-500"
                 >Community</a
               >
             </div>
@@ -80,17 +96,19 @@
           alt="change the world through data"
         />
       </section> -->
-      <section class="my-16 flex flex-col space-x-12 items-center">
+      <section class="my-16 flex flex-col items-center md:space-x-12">
         <div class="">
           <img
-            class=" rounded-full"
+            class="rounded-full"
             src="../images/profile.jpg"
             alt="Millicent Ochieng"
             height="300px"
             width="300px"
           />
         </div>
-        <div class="max-w-5xl p-5 text-2xl font-semibold text-justify">
+        <div
+          class="mx-auto p-5 text-justify text-lg font-semibold md:max-w-5xl md:text-2xl"
+        >
           <p class="leading-8">
             I am a Data & Applied Scientist at the Microsoft Africa Research
             Institute (MARI) - Microsoft Research working on Big Data analytics
@@ -116,7 +134,7 @@
     </div>
     <footer class="mt-7 h-60 w-full bg-gray-900 p-4 text-white md:px-6 md:py-8">
       <div class="relative mx-auto max-w-7xl">
-        <div class="sm:flex sm:items-center sm:justify-between">
+        <div class="flex sm:items-center sm:justify-between">
           <p class="mr-3 cursor-pointer px-3 py-5 text-xl font-semibold">
             Millicent <span class="font-light">Ochieng</span> <br />
             <span class="text-sm font-normal">mochieng@microsoft.com</span>
@@ -145,15 +163,7 @@
       </div>
     </footer>
 
-    <script>
-      //grab everything we need
-      const btn = document.querySelector(".mobile-menu-button");
-      const menu = document.querySelector(".mobile-menu");
-      //add event listeners
-      btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-    </script>
+    <script src="../js/navbar.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

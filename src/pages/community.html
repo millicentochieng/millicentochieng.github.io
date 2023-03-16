@@ -9,8 +9,8 @@
   </head>
   <body class="relative h-full bg-[#e8edf5] text-[#ad8736]">
     <div class="relative mx-auto max-w-7xl">
-      <header class="sticky top-0">
-        <nav class="bg-[#e8edf5] p-5">
+      <header class="sticky top-0 bg-[#e8edf5]">
+        <nav class="p-5">
           <div class="px-4">
             <div class="flex justify-between">
               <!-- logo -->
@@ -28,13 +28,13 @@
                   >About</a
                 >
                 <a class="py-5 hover:text-gray-500" href="./news.html">News</a>
-                <a class="py-5 hover:text-gray-500" href="./education.html"
-                  >Education</a
-                >
+                <a class="py-5" href="./education.html">Education</a>
                 <a class="py-5 hover:text-gray-500" href="./publications.html"
                   >Publications</a
                 >
-                <a class="active py-5" href="./community.html">Community</a>
+                <a class="active py-5 hover:text-gray-500" href="#"
+                  >Community</a
+                >
               </div>
               <div class="flex items-center md:hidden">
                 <button class="mobile-menu-button">
@@ -57,13 +57,29 @@
             </div>
             <!-- mobile menu -->
             <div class="mobile-menu hidden md:hidden">
-              <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
+              <a
+                class="block py-2 px-4 text-sm hover:text-gray-500"
+                href="./about.html"
+                >About</a
+              >
+              <a
+                class="block py-2 px-4 text-sm hover:text-gray-500"
+                href="./news.html"
+                >News</a
+              >
+              <a
+                href="./education.html"
+                class="block py-2 px-4 text-sm hover:text-gray-500"
                 >Education</a
               >
-              <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
+              <a
+                href="./publications.html"
+                class="block py-2 px-4 text-sm hover:text-gray-500"
                 >Publications</a
               >
-              <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
+              <a
+                href="./community.html"
+                class="block py-2 px-4 text-sm hover:text-gray-500"
                 >Community</a
               >
             </div>
@@ -73,11 +89,11 @@
       <!-- //write a section with an image, a section with content and the footer -->
       <section class="m-10 flex max-w-7xl flex-col">
         <div>
-          <span class="mb-4 block text-center text-4xl font-bold"
+          <span class="mb-4 block text-center text-xl font-bold md:text-4xl"
             >Microsoft Africa Research Institute (MARI)</span
           >
           <p
-            class="mx-auto mb-10 p-6 text-justify text-2xl font-semibold text-[#092b49]"
+            class="mx-auto mb-10 p-6 text-justify text-lg font-semibold text-[#092b49] md:text-2xl"
           >
             I am the organizer of MARI monthly seminars where we invite
             researchers to talk about their interesting works in Artificial
@@ -96,11 +112,11 @@
           </p>
         </div>
         <div>
-          <span class="mb-4 block text-center text-4xl font-bold"
+          <span class="mb-4 block text-center text-xl font-bold md:text-4xl"
             >Women in Data Science (WiDS)</span
           >
           <p
-            class="mx-auto mb-10 p-6 text-justify text-2xl font-semibold text-[#092b49]"
+            class="mx-auto mb-10 p-6 text-justify text-lg font-semibold text-[#092b49] md:text-2xl"
           >
             As a
             <a
@@ -131,11 +147,11 @@
           </p>
         </div>
         <div>
-          <span class="mb-4 block text-center text-4xl font-bold"
+          <span class="mb-4 block text-center text-xl font-bold md:text-4xl"
             >Masakhane</span
           >
           <p
-            class="mx-auto mb-10 p-6 text-justify text-2xl font-semibold text-[#092b49]"
+            class="mx-auto mb-10 p-6 text-justify text-lg font-semibold text-[#092b49] md:text-2xl"
           >
             I am a member of
             <a class="link" href="https://www.masakhane.io/">Masakhane</a> which
@@ -180,15 +196,7 @@
       </div>
     </footer>
 
-    <script>
-      //grab everything we need
-      const btn = document.querySelector(".mobile-menu-button");
-      const menu = document.querySelector(".mobile-menu");
-      //add event listeners
-      btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-    </script>
+    <script src="../js/navbar.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

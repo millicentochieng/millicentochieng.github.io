@@ -9,7 +9,7 @@
   </head>
   <body class="relative h-full bg-[#e8edf5] text-[#092b49]">
     <div class="relative mx-auto max-w-7xl">
-      <header class="sticky top-0 text-[#ad8736]">
+      <header class="sticky top-0 text-[#ad8736] bg-[#e8edf5]">
         <nav class="p-5">
           <div class="px-4">
             <div class="flex justify-between">
@@ -57,13 +57,29 @@
             </div>
             <!-- mobile menu -->
             <div class="mobile-menu hidden md:hidden">
-              <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
+              <a
+                class="block py-2 px-4 text-sm hover:text-gray-500"
+                href="./about.html"
+                >About</a
+              >
+              <a
+                class="block py-2 px-4 text-sm hover:text-gray-500"
+                href="./news.html"
+                >News</a
+              >
+              <a
+                href="./education.html"
+                class="block py-2 px-4 text-sm hover:text-gray-500"
                 >Education</a
               >
-              <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
+              <a
+                href="./publications.html"
+                class="block py-2 px-4 text-sm hover:text-gray-500"
                 >Publications</a
               >
-              <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
+              <a
+                href="./community.html"
+                class="block py-2 px-4 text-sm hover:text-gray-500"
                 >Community</a
               >
             </div>
@@ -73,20 +89,21 @@
       <!-- //write a section with an image, a section with content and the footer -->
       <section class="m-10 flex flex-col">
         <div class="mx-auto mt-5 space-y-10">
-          <div class="flex text-4xl">
+          <div class="flex md:text-4xl text-xl">
             <p class="uppercase tracking-wider text-[#ad8736]">Education</p>
           </div>
-          <ul class="max-w-7xl text-2xl text-justify">
+          <ul class="max-w-7xl text-justify md:text-2xl">
             <li class="mb-5 flex flex-auto content-between">
               <span class="mr-14 w-10 text-[#ad8736]">2022</span>
-              <p class="inline justify-center leading-8 font-semibold">
+              <p class="inline justify-center font-semibold leading-8">
                 MSc. Data Science,
                 <a
                   class="link"
                   href="
                 Few Thousand Translations Go a Long Way! Leveraging Pre-trained
                 Models for African News Translation. NAACL 2022."
-                  > African Center of Excellence in Data Science - University of
+                >
+                  African Center of Excellence in Data Science - University of
                   Rwanda.</a
                 >
                 Research: Transfer learning for classification of bean plant
@@ -104,7 +121,7 @@
             </li>
             <li class="mb-5 flex">
               <span class="mr-14 w-10 text-[#ad8736]">2018 </span>
-              <p class="inline justify-center leading-8 font-semibold">
+              <p class="inline justify-center font-semibold leading-8">
                 BSc. Applied Statistics with Computing in Moi University, Kenya.
               </p>
             </li>
@@ -113,47 +130,39 @@
       </section>
     </div>
     <footer
-      class="fixed bottom-0 mt-7 h-60 w-full bg-gray-900 p-4 text-white md:px-6 md:py-8"
-    >
-      <div class="relative mx-auto max-w-7xl">
-        <div class="sm:flex sm:items-center sm:justify-between">
-          <p class="mr-3 cursor-pointer px-3 py-5 text-xl font-semibold">
-            Millicent <span class="font-light">Ochieng</span> <br />
-            <span class="text-sm font-normal">mochieng@microsoft.com</span>
-          </p>
+    class="md:fixed bottom-0 h-60 w-full bg-gray-900 p-4 text-white md:px-6 md:py-8"
+  >
+    <div class="relative mx-auto max-w-7xl">
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <p class="mr-3 cursor-pointer px-3 py-5 text-xl font-semibold">
+          Millicent <span class="font-light">Ochieng</span> <br />
+          <span class="text-sm font-normal">mochieng@microsoft.com</span>
+        </p>
 
-          <ul class="flex flex-wrap items-center space-x-10">
-            <li>
-              <a href="https://www.linkedin.com/in/millicent-ochieng-b8061a14b/"
-                ><ion-icon class="h-6 w-6" name="logo-linkedin"></ion-icon
-              ></a>
-            </li>
-            <li>
-              <a href="https://github.com/millicentochieng"
-                ><ion-icon class="h-6 w-6" name="logo-github"></ion-icon
-              ></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/iam_OchiengM"
-                ><ion-icon class="h-6 w-6" name="logo-twitter"></ion-icon
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <hr class="mx-auto border-gray-500" />
-        <span class="text-normal mt-5 block text-center">&copy 2023</span>
+        <ul class="flex flex-wrap items-center space-x-10">
+          <li>
+            <a href="https://www.linkedin.com/in/millicent-ochieng-b8061a14b/"
+              ><ion-icon class="h-6 w-6" name="logo-linkedin"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/millicentochieng"
+              ><ion-icon class="h-6 w-6" name="logo-github"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/iam_OchiengM"
+              ><ion-icon class="h-6 w-6" name="logo-twitter"></ion-icon
+            ></a>
+          </li>
+        </ul>
       </div>
-    </footer>
+      <hr class="mx-auto border-gray-500" />
+      <span class="text-normal mt-5 block text-center">&copy 2023</span>
+    </div>
+  </footer>
 
-    <script>
-      //grab everything we need
-      const btn = document.querySelector(".mobile-menu-button");
-      const menu = document.querySelector(".mobile-menu");
-      //add event listeners
-      btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-    </script>
+    <script src="../js/navbar.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

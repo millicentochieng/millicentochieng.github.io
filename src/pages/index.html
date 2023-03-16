@@ -35,7 +35,7 @@
                 >Community</a
               >
             </div>
-            <div class="flex items-center md:hidden">
+            <div class="flex items-center md:hidden ">
               <button class="mobile-menu-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -55,14 +55,30 @@
             </div>
           </div>
           <!-- mobile menu -->
-          <div class="mobile-menu hidden md:hidden">
-            <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
+          <div class="mobile-menu absolute hidden md:hidden">
+            <a
+              class="block py-2 px-4 text-sm hover:text-gray-500"
+              href="./about.html"
+              >About</a
+            >
+            <a
+              class="block py-2 px-4 text-sm hover:text-gray-500"
+              href="./news.html"
+              >News</a
+            >
+            <a
+              href="./education.html"
+              class="block py-2 px-4 text-sm hover:text-gray-500"
               >Education</a
             >
-            <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
+            <a
+              href="./publications.html"
+              class="block py-2 px-4 text-sm hover:text-gray-500"
               >Publications</a
             >
-            <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
+            <a
+              href="./community.html"
+              class="block py-2 px-4 text-sm hover:text-gray-500"
               >Community</a
             >
           </div>
@@ -70,12 +86,22 @@
       </nav>
     </header>
     <div class="mt-52 mb-10 flex flex-col items-center justify-center">
-      <h1 class="mb-10 text-9xl font-semibold uppercase text-[#a7865e]">
+      <h1 class="mb-10 md:text-9xl font-semibold uppercase text-[#a7865e] text-4xl">
         Millicent Ochieng
       </h1>
-      <p class="text-5xl text-[#092b49]">
+      <p class="md:text-5xl text-[#092b49] text-2xl text-center">
         DATA & APPLIED SCIENTIST – Microsoft Africa Research Institute (MARI)
       </p>
     </div>
+    
+    <script src="../js/navbar.js"></script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
   </body>
 </html>

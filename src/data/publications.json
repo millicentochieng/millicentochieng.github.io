@@ -48,10 +48,6 @@
    {
     "label": "ACL Anthology",
     "url": "https://aclanthology.org/2026.africanlp-main.7/"
-   },
-   {
-    "label": "PDF",
-    "url": "https://aclanthology.org/2026.africanlp-main.7.pdf"
    }
   ],
   "award": ""
@@ -401,10 +397,6 @@
    {
     "label": "ACL Anthology",
     "url": "https://aclanthology.org/2023.emnlp-main.258/"
-   },
-   {
-    "label": "Code",
-    "url": "https://github.com/microsoft/Multilingual-Evaluation-of-Generative-AI-MEGA"
    }
   ],
   "award": ""

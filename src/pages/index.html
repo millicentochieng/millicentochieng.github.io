@@ -35,9 +35,6 @@
       .hero-links { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.7rem; }
       .portrait { width: 250px; height: 250px; border-radius: 20px; object-fit: cover; border: 1px solid var(--line); }
       .portrait-wrap { position: relative; }
-      .portrait-badge { position: absolute; bottom: -14px; left: -14px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: .5rem .75rem; box-shadow: 0 6px 20px rgba(0,0,0,.07); }
-      .portrait-badge .l1 { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
-      .portrait-badge .l2 { font-size: .82rem; font-weight: 600; color: var(--ink); }
       @media (max-width: 860px) {
         .hero { grid-template-columns: 1fr; gap: 2rem; padding: 2.5rem 0; }
         .portrait-wrap { order: -1; }
@@ -135,17 +132,13 @@
               width="250" height="250" loading="eager" decoding="async"
             />
           </picture>
-          <div class="portrait-badge">
-            <div class="l1">Currently</div>
-            <div class="l2">Microsoft Research</div>
-          </div>
         </div>
       </section>
 
       <!-- STATS -->
       <div class="wrap">
         <div class="stats">
-          <div class="stat"><div class="n">11</div><div class="l">Publications</div></div>
+          <div class="stat"><div class="n">15</div><div class="l">Publications</div></div>
           <div class="stat"><div class="n">1</div><div class="l">Outstanding paper</div></div>
           <div class="stat"><div class="n">400+</div><div class="l">WiDS Kenya community</div></div>
           <div class="stat"><div class="n">5</div><div class="l">Years at MSR</div></div>
@@ -185,37 +178,42 @@
           <li class="pub">
             <div class="pub-venue"><span class="tag">EMNLP</span><span class="pub-year">2026</span></div>
             <div>
-              <p class="pub-title">Toward Cultural Alignment: Human-Centered Evaluation of Multimodal AI Stories Across Five African Communities</p>
-              <p class="pub-authors"><b>M. Ochieng</b> and co-authors</p>
+              <p class="pub-title"><a href="https://arxiv.org/abs/2608.29209">Toward Cultural Alignment: Human-Centered Evaluation of Multimodal AI Stories Across Five African Communities</a></p>
+              <p class="pub-authors"><b>M. Ochieng</b>, F. D. M. A. Ali, E. Ankrah, and 8 more authors</p>
+              <p class="pub-periodical">EMNLP 2026</p>
             </div>
           </li>
           <li class="pub">
             <div class="pub-venue"><span class="tag">NAACL</span><span class="pub-year">2025</span></div>
             <div>
               <p class="pub-title"><a href="https://aclanthology.org/2025.naacl-long.139/">IrokoBench: A New Benchmark for African Languages in the Age of Large Language Models</a></p>
-              <p class="pub-authors">D. I. Adelani, J. Ojo, I. A. Azime, <b>M. Ochieng</b>, S. Hooker and 24 more</p>
-              <span class="pub-award">★ Outstanding Paper Award, NAACL 2025</span>
+              <p class="pub-authors">D. I. Adelani, J. Ojo, I. A. Azime, &hellip;, <b>M. Ochieng</b>, and 23 more authors</p>
+              <p class="pub-periodical">NAACL 2025</p>
+              <span class="pub-award">&#9733; Outstanding Paper Award, NAACL 2025</span>
             </div>
           </li>
           <li class="pub">
-            <div class="pub-venue"><span class="tag">ACL·W</span><span class="pub-year">2024</span></div>
+            <div class="pub-venue"><span class="tag">AfricaNLP</span><span class="pub-year">2025</span></div>
             <div>
-              <p class="pub-title"><a href="https://arxiv.org/abs/2406.00343">Beyond Metrics: Evaluating LLMs' Effectiveness in Culturally Nuanced, Low-Resource Real-World Scenarios</a></p>
-              <p class="pub-authors"><b>M. Ochieng</b>, V. Gumma, S. Sitaram, J. Wang, K. Bali, J. O'Neill and others</p>
+              <p class="pub-title"><a href="https://aclanthology.org/2025.africanlp-1.33/">Beyond Metrics: Evaluating LLMs&#x27; Effectiveness in Culturally Nuanced, Low-Resource Real-World Scenarios</a></p>
+              <p class="pub-authors"><b>M. Ochieng</b>, V. Gumma, S. Sitaram, and 5 more authors</p>
+              <p class="pub-periodical">AfricaNLP at ACL 2025</p>
             </div>
           </li>
           <li class="pub">
             <div class="pub-venue"><span class="tag">NAACL</span><span class="pub-year">2024</span></div>
             <div>
               <p class="pub-title"><a href="https://aclanthology.org/2024.naacl-long.143/">MEGAVERSE: Benchmarking Large Language Models Across Languages, Modalities, Models and Tasks</a></p>
-              <p class="pub-authors">S. Ahuja, D. Aggarwal, V. Gumma, <b>M. Ochieng</b> and others</p>
+              <p class="pub-authors">S. Ahuja, D. Aggarwal, V. Gumma, &hellip;, <b>M. Ochieng</b>, and 7 more authors</p>
+              <p class="pub-periodical">NAACL 2024</p>
             </div>
           </li>
           <li class="pub">
             <div class="pub-venue"><span class="tag">EMNLP</span><span class="pub-year">2023</span></div>
             <div>
               <p class="pub-title"><a href="https://aclanthology.org/2023.emnlp-main.258/">MEGA: Multilingual Evaluation of Generative AI</a></p>
-              <p class="pub-authors">K. Ahuja, H. Diddee, R. Hada, <b>M. Ochieng</b> and others</p>
+              <p class="pub-authors">K. Ahuja, H. Diddee, R. Hada, &hellip;, <b>M. Ochieng</b>, and 8 more authors</p>
+              <p class="pub-periodical">EMNLP 2023</p>
             </div>
           </li>
         </ul>

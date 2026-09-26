@@ -1,13 +1,543 @@
 [
-  {"year":2026,"date":"Aug 2026","venue":"EMNLP","title":"Toward Cultural Alignment: Human-Centered Evaluation of Multimodal AI Stories Across Five African Communities","authors":"<b>M. Ochieng</b> and co-authors","url":"","award":""},
-  {"year":2026,"date":"Mar 2026","venue":"EACL·W","title":"Reasoning Beyond Labels: Measuring LLM Sentiment in Low-Resource, Culturally Nuanced Contexts","authors":"<b>M. Ochieng</b> and co-authors","url":"https://arxiv.org/abs/2506.02280","award":"","note":"AfricaNLP workshop at EACL 2026"},
-  {"year":2025,"date":"Jan 2025","venue":"NAACL","title":"IrokoBench: A New Benchmark for African Languages in the Age of Large Language Models","authors":"D. I. Adelani, J. Ojo, I. A. Azime, <b>M. Ochieng</b>, S. Hooker and 24 more","url":"https://aclanthology.org/2025.naacl-long.139/","award":"★ Outstanding Paper Award, NAACL 2025"},
-  {"year":2024,"date":"Jun 2024","venue":"ACL·W","title":"Beyond Metrics: Evaluating LLMs' Effectiveness in Culturally Nuanced, Low-Resource Real-World Scenarios","authors":"<b>M. Ochieng</b>, V. Gumma, S. Sitaram, J. Wang, V. Chaudhary, K. Ronen, K. Bali, J. O'Neill","url":"https://arxiv.org/abs/2406.00343","award":"","note":"AfricaNLP workshop at ACL 2024"},
-  {"year":2024,"date":"Mar 2024","venue":"NAACL","title":"MEGAVERSE: Benchmarking Large Language Models Across Languages, Modalities, Models and Tasks","authors":"S. Ahuja, D. Aggarwal, V. Gumma, I. Watts, A. Sathe, <b>M. Ochieng</b> and others","url":"https://aclanthology.org/2024.naacl-long.143/","award":""},
-  {"year":2024,"date":"Mar 2024","venue":"NAACL","title":"AfriMTE and AfriCOMET: Enhancing COMET to Embrace Under-resourced African Languages","authors":"J. Wang, D. I. Adelani, S. Agrawal, <b>M. Ochieng</b> and co-authors","url":"https://aclanthology.org/2024.naacl-long.334/","award":""},
-  {"year":2023,"date":"Nov 2023","venue":"AfriCHI","title":"Can Large Language Models Support Medical Facilitation Work? A Speculative Analysis","authors":"<b>M. Ochieng</b>, J. O'Neill, K. Ronen and co-authors","url":"","award":""},
-  {"year":2023,"date":"Oct 2023","venue":"EMNLP","title":"MEGA: Multilingual Evaluation of Generative AI","authors":"K. Ahuja, H. Diddee, R. Hada, <b>M. Ochieng</b>, K. Ramesh and others","url":"https://aclanthology.org/2023.emnlp-main.258/","award":""},
-  {"year":2022,"date":"Oct 2022","venue":"ICLR·W","title":"Participatory Translations of Oshiwambo: Towards Sustainable Culture Preservation with Language Technology","authors":"W. O. Nekoto, J. Kreutzer, J. Rajab, <b>M. Ochieng</b>, J. Abbott","url":"","award":"","note":"AfricaNLP at ICLR 2022 & NLP4PI at EMNLP 2022"},
-  {"year":2022,"date":"Jun 2022","venue":"LREC","title":"Language Patterns and Behaviour of the Peer Supporters in Multilingual Healthcare Conversational Forums","authors":"I. Mondal, K. Bali, M. Jain, M. Choudhury, K. Ronen, <b>M. Ochieng</b>, K. Awori, J. O'Neill","url":"https://www.microsoft.com/en-us/research/publication/language-patterns-and-behaviour-of-the-peer-supporters-in-multilingual-healthcare-conversational-forums/","award":""},
-  {"year":2022,"date":"May 2022","venue":"NAACL","title":"A Few Thousand Translations Go a Long Way! Leveraging Pre-trained Models for African News Translation","authors":"D. I. Adelani, J. O. Alabi, A. Fan, J. Kreutzer, <b>M. Ochieng</b> and 40 more","url":"https://arxiv.org/pdf/2205.02022.pdf","award":""}
+ {
+  "year": 2026,
+  "date": "Aug 2026",
+  "venue": "EMNLP",
+  "periodical": "EMNLP 2026",
+  "title": "Toward Cultural Alignment: Human-Centered Evaluation of Multimodal AI Stories Across Five African Communities",
+  "authors": [
+   "M. Ochieng",
+   "F. D. M. A. Ali",
+   "E. Ankrah",
+   "N. G. Abdulhamid",
+   "M. Boyd",
+   "S. Nyairo",
+   "M. Muchai",
+   "S. C. Maina",
+   "A. Vashistha",
+   "A. Thieme",
+   "J. O'Neill"
+  ],
+  "url": "https://arxiv.org/abs/2608.29209",
+  "links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2608.29209"
+   }
+  ],
+  "award": ""
+ },
+ {
+  "year": 2026,
+  "date": "Mar 2026",
+  "venue": "AfricaNLP",
+  "periodical": "AfricaNLP at EACL 2026",
+  "title": "Reasoning Beyond Labels: Measuring LLM Sentiment in Low-Resource, Culturally Nuanced Contexts",
+  "authors": [
+   "M. Ochieng",
+   "A. Thieme",
+   "I. Ezeani",
+   "R. Ueno",
+   "S. C. Maina",
+   "K. Ronen",
+   "J. González",
+   "J. O'Neill"
+  ],
+  "url": "https://aclanthology.org/2026.africanlp-main.7/",
+  "links": [
+   {
+    "label": "ACL Anthology",
+    "url": "https://aclanthology.org/2026.africanlp-main.7/"
+   },
+   {
+    "label": "PDF",
+    "url": "https://aclanthology.org/2026.africanlp-main.7.pdf"
+   }
+  ],
+  "award": ""
+ },
+ {
+  "year": 2025,
+  "date": "Apr 2025",
+  "venue": "CHI",
+  "periodical": "CHI 2025",
+  "title": "Social by Nature: How Socio-tecture Shapes the Work of SMBs and Considerations for Reimagining Collaborative Human-AI Systems",
+  "authors": [
+   "E. Ankrah",
+   "K. Awori",
+   "S. Nyairo",
+   "M. Muchai",
+   "M. Ochieng",
+   "M. Kariuki",
+   "G. R. Hayes",
+   "J. O'Neill"
+  ],
+  "url": "https://doi.org/10.1145/3706598.3715019",
+  "links": [
+   {
+    "label": "ACM DL",
+    "url": "https://doi.org/10.1145/3706598.3715019"
+   }
+  ],
+  "award": ""
+ },
+ {
+  "year": 2025,
+  "date": "Apr 2025",
+  "venue": "NAACL",
+  "periodical": "NAACL 2025",
+  "title": "IrokoBench: A New Benchmark for African Languages in the Age of Large Language Models",
+  "authors": [
+   "D. I. Adelani",
+   "J. Ojo",
+   "I. A. Azime",
+   "J. Y. Zhuang",
+   "J. O. Alabi",
+   "X. He",
+   "M. Ochieng",
+   "S. Hooker",
+   "A. Bukula",
+   "E. A. Lee",
+   "C. Chukwuneke",
+   "H. Buzaaba",
+   "B. Sibanda",
+   "G. Kalipe",
+   "J. Mukiibi",
+   "S. Kabongo",
+   "F. Yuehgoh",
+   "M. Setaka",
+   "L. Ndolela",
+   "N. Odu",
+   "R. Mabuya",
+   "S. H. Muhammad",
+   "S. Osei",
+   "S. Samb",
+   "T. K. Guge",
+   "T. V. Sherman",
+   "P. Stenetorp"
+  ],
+  "url": "https://aclanthology.org/2025.naacl-long.139/",
+  "links": [
+   {
+    "label": "ACL Anthology",
+    "url": "https://aclanthology.org/2025.naacl-long.139/"
+   }
+  ],
+  "award": "Outstanding Paper Award, NAACL 2025"
+ },
+ {
+  "year": 2025,
+  "date": "May 2025",
+  "venue": "AfricaNLP",
+  "periodical": "AfricaNLP at ACL 2025",
+  "title": "Beyond Metrics: Evaluating LLMs' Effectiveness in Culturally Nuanced, Low-Resource Real-World Scenarios",
+  "authors": [
+   "M. Ochieng",
+   "V. Gumma",
+   "S. Sitaram",
+   "J. Wang",
+   "V. Chaudhary",
+   "K. Ronen",
+   "K. Bali",
+   "J. O'Neill"
+  ],
+  "url": "https://aclanthology.org/2025.africanlp-1.33/",
+  "links": [
+   {
+    "label": "ACL Anthology",
+    "url": "https://aclanthology.org/2025.africanlp-1.33/"
+   }
+  ],
+  "award": ""
+ },
+ {
+  "year": 2024,
+  "date": "Dec 2024",
+  "venue": "Report",
+  "periodical": "Microsoft Technical Report MSR-TR-2024-56",
+  "title": "Microsoft New Future of Work Report 2024",
+  "authors": [
+   "J. Butler",
+   "M. Vorvoreanu",
+   "R. Janssen",
+   "A. Sellen",
+   "N. Immorlica",
+   "A. Troy",
+   "A. Sarkar",
+   "A. Farach",
+   "A. Chouldechova",
+   "A. Olteanu",
+   "A. Cambon",
+   "A. Radhakrishna",
+   "A. Roseway",
+   "B. Zorn",
+   "B. Hecht",
+   "D. G. Goldstein",
+   "D. Joshi",
+   "E. Cutrell",
+   "E. Kiciman",
+   "G. Ramos",
+   "G. Soares",
+   "H. Wallach",
+   "I. Drosos",
+   "J. W. (johnwilliams)",
+   "J. O'Neill",
+   "J. Hofman",
+   "J. Teevan",
+   "J. Hernandez",
+   "J. W. Vaughan",
+   "J. Suh",
+   "J. Tang",
+   "J. Edwards",
+   "K. Bali",
+   "K. Inkpen",
+   "K. Madhavan",
+   "L. Bulman",
+   "L. Reicherts",
+   "L. Tankelevitch",
+   "L. Yang",
+   "M. Mott",
+   "M. Ochieng",
+   "M. Muchai",
+   "N. Baym",
+   "N. Abdulhamid",
+   "N. Marquardt",
+   "K. Hinckley",
+   "M. Bentley",
+   "D. Brown",
+   "H. Romat",
+   "N. H. Riche",
+   "S. Maina",
+   "S. Iqbal",
+   "S. Lindley",
+   "S. Nyairo",
+   "S. L. Blodgett",
+   "S. Gulwani",
+   "S. Sitaram",
+   "V. Le"
+  ],
+  "url": "https://www.microsoft.com/en-us/research/publication/microsoft-new-future-of-work-report-2024/",
+  "links": [
+   {
+    "label": "Report",
+    "url": "https://www.microsoft.com/en-us/research/publication/microsoft-new-future-of-work-report-2024/"
+   }
+  ],
+  "award": ""
+ },
+ {
+  "year": 2024,
+  "date": "Mar 2024",
+  "venue": "NAACL",
+  "periodical": "NAACL 2024",
+  "title": "AfriMTE and AfriCOMET: Enhancing COMET to Embrace Under-resourced African Languages",
+  "authors": [
+   "J. Wang",
+   "D. I. Adelani",
+   "S. Agrawal",
+   "M. Masiak",
+   "R. Rei",
+   "E. Briakou",
+   "M. Carpuat",
+   "X. He",
+   "S. Bourhim",
+   "A. Bukula",
+   "M. A. Mohamed",
+   "T. Olatoye",
+   "H. Mokayed",
+   "C. Mwase",
+   "W. Kimotho",
+   "F. Yuehgoh",
+   "A. Aremu",
+   "J. Ojo",
+   "S. H. Muhammad",
+   "S. Osei",
+   "A. Omotayo",
+   "C. I. Chukwuneke",
+   "P. Ogayo",
+   "O. Hourrane",
+   "S. E. ANIGRI",
+   "L. Ndolela",
+   "T. Mangwana",
+   "S. A. Mohamed",
+   "H. Ayinde",
+   "O. O. Awoyomi",
+   "L. Alkhaled",
+   "S. S. al-Azzawi",
+   "N. A. Etori",
+   "M. Ochieng",
+   "C. Siro",
+   "N. Kiragu",
+   "E. Muchiri",
+   "W. Kimotho",
+   "T. S. Sakayo",
+   "L. N. M. Wamba",
+   "D. Abolade",
+   "S. Ajao",
+   "T. Adewumi",
+   "I. Shode",
+   "R. S. Macharm",
+   "R. N. Iro",
+   "S. S. Abdullahi",
+   "S. E. Moore",
+   "B. Opoku",
+   "Z. Akinjobi",
+   "A. Afolabi",
+   "N. C. Obiefuna",
+   "O. Ogbu",
+   "S. B. Ochieng'",
+   "V. A. Otiende",
+   "C. E. MBONU",
+   "Y. Lu",
+   "P. Stenetorp"
+  ],
+  "url": "https://aclanthology.org/2024.naacl-long.334/",
+  "links": [
+   {
+    "label": "ACL Anthology",
+    "url": "https://aclanthology.org/2024.naacl-long.334/"
+   }
+  ],
+  "award": ""
+ },
+ {
+  "year": 2024,
+  "date": "Mar 2024",
+  "venue": "NAACL",
+  "periodical": "NAACL 2024",
+  "title": "MEGAVERSE: Benchmarking Large Language Models Across Languages, Modalities, Models and Tasks",
+  "authors": [
+   "S. Ahuja",
+   "D. Aggarwal",
+   "V. Gumma",
+   "I. Watts",
+   "A. Sathe",
+   "M. Ochieng",
+   "R. Hada",
+   "P. Jain",
+   "M. Ahmed",
+   "K. Bali",
+   "S. Sitaram"
+  ],
+  "url": "https://aclanthology.org/2024.naacl-long.143/",
+  "links": [
+   {
+    "label": "ACL Anthology",
+    "url": "https://aclanthology.org/2024.naacl-long.143/"
+   }
+  ],
+  "award": ""
+ },
+ {
+  "year": 2024,
+  "date": "Nov 2024",
+  "venue": "Preprint",
+  "periodical": "Preprint",
+  "title": "Dukawalla: Voice Interfaces for Small Businesses in Africa",
+  "authors": [
+   "E. Ankrah",
+   "S. Nyairo",
+   "M. Muchai",
+   "K. Awori",
+   "M. Ochieng",
+   "M. Kariuki",
+   "J. O'Neill"
+  ],
+  "url": "https://arxiv.org/abs/2505.05170",
+  "links": [
+   {
+    "label": "arXiv",
+    "url": "https://arxiv.org/abs/2505.05170"
+   }
+  ],
+  "award": ""
+ },
+ {
+  "year": 2023,
+  "date": "Nov 2023",
+  "venue": "AfriCHI",
+  "periodical": "AfriCHI 2023",
+  "title": "Can Large Language Models Support Medical Facilitation Work? A Speculative Analysis",
+  "authors": [
+   "N. G. Abdulhamid",
+   "M. Ochieng",
+   "K. Bali",
+   "E. Ankrah",
+   "N. Karusala",
+   "K. Ronen",
+   "J. O'Neill"
+  ],
+  "url": "https://doi.org/10.1145/3628096.3628752",
+  "links": [
+   {
+    "label": "ACM DL",
+    "url": "https://doi.org/10.1145/3628096.3628752"
+   }
+  ],
+  "award": ""
+ },
+ {
+  "year": 2023,
+  "date": "Oct 2023",
+  "venue": "EMNLP",
+  "periodical": "EMNLP 2023",
+  "title": "MEGA: Multilingual Evaluation of Generative AI",
+  "authors": [
+   "K. Ahuja",
+   "H. Diddee",
+   "R. Hada",
+   "M. Ochieng",
+   "K. Ramesh",
+   "P. Jain",
+   "A. Nambi",
+   "T. Ganu",
+   "S. Segal",
+   "M. Ahmed",
+   "K. Bali",
+   "S. Sitaram"
+  ],
+  "url": "https://aclanthology.org/2023.emnlp-main.258/",
+  "links": [
+   {
+    "label": "ACL Anthology",
+    "url": "https://aclanthology.org/2023.emnlp-main.258/"
+   },
+   {
+    "label": "Code",
+    "url": "https://github.com/microsoft/Multilingual-Evaluation-of-Generative-AI-MEGA"
+   }
+  ],
+  "award": ""
+ },
+ {
+  "year": 2023,
+  "date": "Sep 2023",
+  "venue": "ACM JCSS",
+  "periodical": "ACM Journal on Computing and Sustainable Societies, 1(2)",
+  "title": "Evaluation of Dependency Structure for Multivariate Weather Predictors using Copulas",
+  "authors": [
+   "S. C. Maina",
+   "D. Mwigereri",
+   "J. Weyn",
+   "L. Mackey",
+   "M. Ochieng"
+  ],
+  "url": "https://doi.org/10.1145/3616384",
+  "links": [
+   {
+    "label": "ACM DL",
+    "url": "https://doi.org/10.1145/3616384"
+   }
+  ],
+  "award": ""
+ },
+ {
+  "year": 2022,
+  "date": "Apr 2022",
+  "venue": "AfricaNLP",
+  "periodical": "AfricaNLP at ICLR 2022",
+  "title": "Participatory Translations of Oshiwambo: Towards Sustainable Culture Preservation with Language Technology",
+  "authors": [
+   "W. Nekoto",
+   "J. Kreutzer",
+   "J. Rajab",
+   "M. Ochieng",
+   "J. Abbott"
+  ],
+  "url": "https://www.microsoft.com/en-us/research/publication/participatory-translations-of-oshiwambo-towards-sustainable-culture-preservation-with-language-technology/",
+  "links": [
+   {
+    "label": "Abstract",
+    "url": "https://www.microsoft.com/en-us/research/publication/participatory-translations-of-oshiwambo-towards-sustainable-culture-preservation-with-language-technology/"
+   }
+  ],
+  "award": ""
+ },
+ {
+  "year": 2022,
+  "date": "Jun 2022",
+  "venue": "LREC",
+  "periodical": "LREC 2022",
+  "title": "Language Patterns and Behaviour of the Peer Supporters in Multilingual Healthcare Conversational Forums",
+  "authors": [
+   "I. Mondal",
+   "K. Bali",
+   "M. Jain",
+   "M. Choudhury",
+   "K. Ronen",
+   "M. Ochieng",
+   "K. Awori",
+   "J. O'Neill"
+  ],
+  "url": "https://aclanthology.org/2022.lrec-1.102/",
+  "links": [
+   {
+    "label": "ACL Anthology",
+    "url": "https://aclanthology.org/2022.lrec-1.102/"
+   }
+  ],
+  "award": ""
+ },
+ {
+  "year": 2022,
+  "date": "May 2022",
+  "venue": "NAACL",
+  "periodical": "NAACL 2022",
+  "title": "A Few Thousand Translations Go A Long Way! Leveraging Pre-trained Models for African News Translation",
+  "authors": [
+   "D. I. Adelani",
+   "J. O. Alabi",
+   "A. Fan",
+   "J. Kreutzer",
+   "X. Shen",
+   "M. Reid",
+   "D. Ruiter",
+   "D. Klakow",
+   "P. Nabende",
+   "E. Chang",
+   "T. R. Gwadabe",
+   "F. Sackey",
+   "B. F. P. Dossou",
+   "C. C. Emezue",
+   "C. Leong",
+   "M. Beukman",
+   "S. H. Muhammad",
+   "G. D. Jarso",
+   "O. Yousuf",
+   "A. N. Rubungo",
+   "G. Hacheme",
+   "E. P. Wairagala",
+   "M. U. Nasir",
+   "B. A. Ajibade",
+   "T. O. Ajayi",
+   "Y. W. Gitau",
+   "J. Abbott",
+   "M. Ahmed",
+   "M. Ochieng",
+   "A. Aremu",
+   "P. Ogayo",
+   "J. Mukiibi",
+   "F. O. Kabore",
+   "G. K. Kalipe",
+   "D. Mbaye",
+   "A. A. Tapo",
+   "V. M. Koagne",
+   "E. Munkoh-Buabeng",
+   "V. Wagner",
+   "I. Abdulmumin",
+   "A. Awokoya",
+   "H. Buzaaba",
+   "B. Sibanda",
+   "A. Bukula",
+   "S. Manthalu"
+  ],
+  "url": "https://aclanthology.org/2022.naacl-main.223/",
+  "links": [
+   {
+    "label": "ACL Anthology",
+    "url": "https://aclanthology.org/2022.naacl-main.223/"
+   }
+  ],
+  "award": ""
+ }
 ]

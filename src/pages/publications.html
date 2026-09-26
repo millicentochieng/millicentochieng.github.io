@@ -46,18 +46,48 @@
           const venues = ["All", ...new Set(all.map((p) => p.venue))];
           let active = "All";
 
+          const ME = /Ochieng$/;
+          const esc = (t) =>
+            String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+          const name = (a) => (ME.test(a) ? `<b>${esc(a)}</b>` : esc(a));
+
+          function authorHTML(authors) {
+            if (authors.length <= 4) return authors.map(name).join(", ");
+            const head = authors.slice(0, 3);
+            const rest = authors.slice(3);
+            const meIdx = authors.findIndex((a) => ME.test(a));
+            let shown = head.map(name).join(", ");
+            let hidden = rest.length;
+            if (meIdx > 2) {
+              shown += `, &hellip;, ${name(authors[meIdx])}`;
+              hidden -= 1;
+            }
+            if (hidden <= 0) return shown;
+            const label = `${hidden} more author${hidden === 1 ? "" : "s"}`;
+            return `${shown}, and <span class="more-authors" role="button" tabindex="0"
+              data-rest="${esc(rest.map(name).join(", ")).replace(/"/g, "&quot;")}"
+              data-label="${label}" title="click to view all authors">${label}</span>`;
+          }
+
           function draw() {
             const rows = active === "All" ? all : all.filter((p) => p.venue === active);
             list.innerHTML = rows
               .map(
                 (p) => `
               <li class="pub">
-                <div class="pub-venue"><span class="tag">${p.venue}</span><span class="pub-year">${p.date}</span></div>
+                <div class="pub-venue"><span class="tag">${esc(p.venue)}</span><span class="pub-year">${esc(p.date)}</span></div>
                 <div>
-                  <p class="pub-title">${p.url ? `<a href="${p.url}">${p.title}</a>` : p.title}</p>
-                  <p class="pub-authors">${p.authors}</p>
-                  ${p.note ? `<p class="pub-authors" style="font-style:italic">${p.note}</p>` : ""}
-                  ${p.award ? `<span class="pub-award">${p.award}</span>` : ""}
+                  <p class="pub-title">${p.url ? `<a href="${p.url}">${esc(p.title)}</a>` : esc(p.title)}</p>
+                  <p class="pub-authors">${authorHTML(p.authors)}</p>
+                  <p class="pub-periodical">${esc(p.periodical)}</p>
+                  ${p.award ? `<span class="pub-award">&#9733; ${esc(p.award)}</span>` : ""}
+                  ${
+                    p.links && p.links.length
+                      ? `<span class="pub-links">${p.links
+                          .map((l) => `<a href="${l.url}" rel="noopener" target="_blank">${esc(l.label)}</a>`)
+                          .join("")}</span>`
+                      : ""
+                  }
                 </div>
               </li>`
               )
@@ -65,6 +95,24 @@
             document.getElementById("count").textContent =
               rows.length + (rows.length === 1 ? " paper" : " papers");
           }
+
+          function toggleAuthors(el) {
+            const rest = el.dataset.rest;
+            el.dataset.rest = el.textContent === el.dataset.label ? rest : rest;
+            if (el.textContent === el.dataset.label) {
+              el.innerHTML = rest;
+              el.classList.remove("more-authors");
+            }
+          }
+          list.addEventListener("click", (e) => {
+            const el = e.target.closest(".more-authors");
+            if (el) toggleAuthors(el);
+          });
+          list.addEventListener("keydown", (e) => {
+            if (e.key !== "Enter" && e.key !== " ") return;
+            const el = e.target.closest(".more-authors");
+            if (el) { e.preventDefault(); toggleAuthors(el); }
+          });
 
           filters.innerHTML = venues
             .map((v) => `<button class="pill" data-v="${v}" aria-pressed="${v === active}">${v}</button>`)

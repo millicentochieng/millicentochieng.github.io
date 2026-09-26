@@ -161,17 +161,28 @@ img { max-width: 100%; display: block; }
 .prose h2 { font-family: var(--font-display); font-size: 1.5rem; margin: 2.2rem 0 .8rem; }
 
 /* ---------- publications ---------- */
-.pubs { list-style: none; margin: 2rem 0 0; padding: 0; border-top: 1px solid var(--line); }
-.pub { display: grid; grid-template-columns: 78px 1fr; gap: 1.2rem; padding: 1.1rem 0; border-bottom: 1px solid var(--line); }
+.pubs { list-style: none; margin: 2rem 0 0; padding: 0; }
+.pub { display: grid; grid-template-columns: 92px 1fr; gap: 1.3rem; padding: 1.15rem 0; }
 .pub-venue { display: flex; flex-direction: column; gap: .35rem; align-items: flex-start; }
+.pub-venue .tag { width: 100%; text-align: center; }
 .pub-year { font-family: var(--font-mono); font-size: 11px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
 .pub-title { font-size: .98rem; font-weight: 600; color: var(--ink); line-height: 1.4; margin: 0; }
-.pub-title a { text-decoration: none; }
+.pub-title a { text-decoration: none; color: inherit; }
 .pub-title a:hover { color: var(--accent); }
-.pub-authors { font-size: .83rem; color: var(--ink-3); margin: .25rem 0 0; }
-.pub-authors b { color: var(--ink-2); }
+.pub-authors { font-size: .83rem; color: var(--ink-3); margin: .3rem 0 0; line-height: 1.55; }
+.pub-authors b { color: var(--ink); font-weight: 600; }
+.more-authors { color: var(--accent); cursor: pointer; border-bottom: 1px dotted var(--accent); }
+.more-authors:hover { color: var(--ink); border-bottom-color: var(--ink); }
+.pub-periodical { font-size: .83rem; color: var(--ink-2); margin: .3rem 0 0; font-style: italic; }
 .pub-award { display: inline-block; margin-top: .4rem; font-size: .78rem; font-weight: 600; color: var(--copper); }
-@media (max-width: 640px) { .pub { grid-template-columns: 1fr; gap: .5rem; } .pub-venue { flex-direction: row; align-items: center; gap: .5rem; } }
+.pub-links { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .55rem; }
+.pub-links a { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); border: 1px solid var(--line); border-radius: 999px; padding: .25rem .6rem; text-decoration: none; transition: border-color .15s, color .15s; }
+.pub-links a:hover { color: var(--accent); border-color: var(--accent); }
+@media (max-width: 640px) {
+  .pub { grid-template-columns: 1fr; gap: .5rem; }
+  .pub-venue { flex-direction: row; align-items: center; gap: .55rem; }
+  .pub-venue .tag { width: auto; }
+}
 
 /* ---------- timeline ---------- */
 .timeline { list-style: none; margin: 2rem 0 0; padding: 0 0 0 1.4rem; border-left: 1px solid var(--line); }

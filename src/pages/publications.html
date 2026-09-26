@@ -75,7 +75,11 @@
                 <div>
                   <p class="pub-title">${p.url ? `<a href="${p.url}">${esc(p.title)}</a>` : esc(p.title)}</p>
                   <p class="pub-authors">${authorHTML(p.authors)}</p>
-                  <p class="pub-periodical">${esc(p.periodical)}</p>
+                  ${
+                    p.periodical && p.periodical.replace(/\s+/g, " ").trim().toLowerCase() !== `${p.venue} ${p.year}`.toLowerCase()
+                      ? `<p class="pub-periodical">${esc(p.periodical)}</p>`
+                      : ""
+                  }
                   ${p.award ? `<span class="pub-award">&#9733; ${esc(p.award)}</span>` : ""}
                   ${
                     p.links && p.links.length

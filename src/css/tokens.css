@@ -199,11 +199,12 @@ img { max-width: 100%; display: block; }
 
 /* ---------- timeline ---------- */
 .timeline { list-style: none; margin: 2rem 0 0; padding: 0 0 0 1.4rem; border-left: 1px solid var(--line); }
-.tl { position: relative; padding: 0 0 1.8rem 0; }
+.tl { position: relative; display: grid; grid-template-columns: 7.5rem 1fr; gap: 1.6rem; padding: 0 0 1.8rem 0; }
 .tl::before { content: ""; position: absolute; left: calc(-1.4rem - 4.5px); top: .45rem; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
-.tl .d { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
-.tl p { margin: .3rem 0 0; font-size: .92rem; color: var(--ink-2); max-width: 66ch; }
+.tl .d { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); padding-top: .28rem; }
+.tl p { margin: 0; font-size: .92rem; color: var(--ink-2); }
 .tl p a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); }
+@media (max-width: 640px) { .tl { grid-template-columns: 1fr; gap: .3rem; } .tl .d { padding-top: 0; } }
 
 /* ---------- education ---------- */
 .edu { list-style: none; margin: 2rem 0 0; padding: 0; border-top: 1px solid var(--line); }

@@ -1,81 +1,276 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Millicent Ochieng</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Millicent Ochieng — Research Scientist, Multilingual &amp; Multicultural AI</title>
+    <meta name="description" content="Millicent Ochieng is a Research Scientist at Microsoft Research Africa and a PhD researcher at the University of the Witwatersrand, working on multilingual tokenization, cultural alignment and equitable AI." />
+    <meta name="author" content="Millicent Ochieng" />
+    <meta name="keywords" content="Millicent Ochieng, multilingual NLP, multicultural AI, equitable AI, tokenization, African NLP, Microsoft Research Africa, Masakhane, AfricaNLP, LLM evaluation" />
+    <link rel="canonical" href="https://millicentochieng.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Millicent Ochieng — Research Scientist, Multilingual & Multicultural AI" />
+    <meta property="og:description" content="Research Scientist at Microsoft Research Africa and PhD researcher at Wits. Multilingual tokenization, cultural alignment and equitable AI." />
+    <meta property="og:url" content="https://millicentochieng.github.io/" />
+    <meta property="og:image" content="https://millicentochieng.github.io/src/assets/og-card.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@iam_OchiengM" />
+    <meta name="twitter:title" content="Millicent Ochieng — Research Scientist, Multilingual & Multicultural AI" />
+    <meta name="twitter:description" content="Research Scientist at Microsoft Research Africa and PhD researcher at Wits. Multilingual tokenization, cultural alignment and equitable AI." />
+    <meta name="twitter:image" content="https://millicentochieng.github.io/src/assets/og-card.jpg" />
+    <meta name="theme-color" content="#0f5d56" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%8C%8D</text></svg>" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <style>
+      /* ---- hero ---- */
+      .hero { display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center; padding: 4.5rem 0 3.5rem; }
+      .hero-name { font-size: clamp(2.4rem, 6vw, 3.9rem); }
+      .hero-role { font-size: 1.08rem; color: var(--ink-2); margin: .9rem 0 0; }
+      .hero-role a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); }
+      .hero-lede { font-size: 1rem; color: var(--ink-2); margin: 1rem 0 0; max-width: 58ch; }
+      .hero-links { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.7rem; }
+      .portrait { width: 250px; height: 250px; border-radius: 20px; object-fit: cover; border: 1px solid var(--line); }
+      .portrait-wrap { position: relative; }
+      .portrait-badge { position: absolute; bottom: -14px; left: -14px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: .5rem .75rem; box-shadow: 0 6px 20px rgba(0,0,0,.07); }
+      .portrait-badge .l1 { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+      .portrait-badge .l2 { font-size: .82rem; font-weight: 600; color: var(--ink); }
+      @media (max-width: 860px) {
+        .hero { grid-template-columns: 1fr; gap: 2rem; padding: 2.5rem 0; }
+        .portrait-wrap { order: -1; }
+        .portrait { width: 150px; height: 150px; }
+      }
+
+      /* ---- stats ---- */
+      .stats { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+      .stat { padding: 1.4rem .75rem; text-align: center; border-right: 1px solid var(--line); }
+      .stat:last-child { border-right: 0; }
+      .stat .n { font-family: var(--font-display); font-size: 1.9rem; font-weight: 600; color: var(--accent); font-variant-numeric: tabular-nums; line-height: 1; }
+      .stat .l { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); margin-top: .45rem; }
+      @media (max-width: 640px) { .stats { grid-template-columns: 1fr 1fr; } .stat:nth-child(2) { border-right: 0; } .stat:nth-child(-n+2) { border-bottom: 1px solid var(--line); } }
+
+      /* ---- grids ---- */
+      .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.6rem 2.2rem; margin-top: 2rem; }
+      .interest { border-top: 2px solid var(--ink); padding-top: .85rem; }
+      .interest h3 { font-size: .98rem; margin: 0 0 .35rem; color: var(--ink); }
+      .interest p { font-size: .87rem; color: var(--ink-2); margin: 0; }
+
+      /* ---- publications ---- */
+      .pubs { list-style: none; margin: 2rem 0 0; padding: 0; border-top: 1px solid var(--line); }
+      .pub { display: grid; grid-template-columns: 78px 1fr; gap: 1.2rem; padding: 1.1rem 0; border-bottom: 1px solid var(--line); }
+      .pub-venue { display: flex; flex-direction: column; gap: .35rem; align-items: flex-start; }
+      .pub-year { font-family: var(--font-mono); font-size: 11px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+      .pub-title { font-size: .98rem; font-weight: 600; color: var(--ink); line-height: 1.4; margin: 0; }
+      .pub-title a { text-decoration: none; }
+      .pub-title a:hover { color: var(--accent); }
+      .pub-authors { font-size: .83rem; color: var(--ink-3); margin: .25rem 0 0; }
+      .pub-authors b { color: var(--ink-2); }
+      .pub-award { display: inline-block; margin-top: .4rem; font-size: .78rem; font-weight: 600; color: var(--copper); }
+      @media (max-width: 640px) { .pub { grid-template-columns: 1fr; gap: .5rem; } .pub-venue { flex-direction: row; align-items: center; gap: .5rem; } }
+
+      /* ---- awards ---- */
+      .awards { list-style: none; margin: 2rem 0 0; padding: 0; border-top: 1px solid var(--line); }
+      .award { display: grid; grid-template-columns: 78px 1fr; gap: 1.2rem; padding: .95rem 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+      .award .y { font-family: var(--font-mono); font-size: 11px; color: var(--accent); font-variant-numeric: tabular-nums; }
+      .award .t { font-size: .94rem; color: var(--ink); }
+      .award .t small { display: block; color: var(--ink-3); font-size: .83rem; margin-top: .15rem; }
+      @media (max-width: 640px) { .award { grid-template-columns: 1fr; gap: .2rem; } }
+
+      /* ---- community / cta ---- */
+      .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.2rem; margin-top: 2rem; }
+      .card { border: 1px solid var(--line); border-radius: var(--radius); padding: 1.3rem; background: var(--surface); transition: border-color .15s; }
+      .card:hover { border-color: var(--line-strong); }
+      .card h3 { font-size: .98rem; margin: .6rem 0 .3rem; }
+      .card p { font-size: .86rem; color: var(--ink-2); margin: 0; }
+      .band { background: var(--accent); color: var(--on-accent); border-radius: var(--radius); padding: 2.6rem 2.2rem; margin: 1rem 0 0; }
+      .band h2 { font-family: var(--font-display); font-size: 1.7rem; margin: .4rem 0 .6rem; color: var(--on-accent); }
+      .band p { color: var(--on-accent); opacity: .92; max-width: 54ch; margin: 0; font-size: .95rem; }
+      .band .eyebrow { color: var(--on-accent); opacity: .8; }
+      .band .pill { border-color: color-mix(in srgb, var(--on-accent) 45%, transparent); color: var(--on-accent); }
+      .band .pill:hover { background: var(--on-accent); color: var(--accent); border-color: var(--on-accent); }
+    </style>
   </head>
-  <body class="overflow-hidden bg-[#e8edf5] text-[#ad8736]">
-    <header class="sticky top-0 mx-auto max-w-7xl">
-      <nav class="p-5">
-        <div class="px-4">
-          <div class="flex justify-between">
-            <!-- logo -->
-            <div class="flex">
-              <a
-                href="#"
-                class="mr-3 cursor-pointer px-3 py-5 text-xl font-semibold"
-              >
-                Millicent <span class="font-light">Ochieng</span>
-              </a>
-            </div>
-            <!-- primary nav -->
-            <div class="hidden items-center space-x-12 md:flex">
-              <a class="py-5 hover:text-gray-500" href="./about.html">About</a>
-              <a class="py-5 hover:text-gray-500" href="./news.html">News</a>
-              <a class="py-5 hover:text-gray-500" href="./education.html"
-                >Education</a
-              >
-              <a class="py-5 hover:text-gray-500" href="./publications.html"
-                >Publications</a
-              >
-              <a class="py-5 hover:text-gray-500" href="./community.html"
-                >Community</a
-              >
-            </div>
-            <div class="flex items-center md:hidden">
-              <button class="mobile-menu-button">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-6 w-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <!-- mobile menu -->
-          <div class="mobile-menu hidden md:hidden">
-            <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
-              >Education</a
-            >
-            <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
-              >Publications</a
-            >
-            <a href="" class="block py-2 px-4 text-sm hover:text-gray-500"
-              >Community</a
-            >
+  <body>
+    <div id="site-nav"></div>
+
+    <main>
+      <!-- HERO -->
+      <section class="wrap hero">
+        <div>
+          <p class="eyebrow">Research Scientist · Nairobi, Kenya</p>
+          <h1 class="h-display hero-name">Millicent Ochieng</h1>
+          <p class="hero-role">
+            Research Scientist, <a href="https://www.microsoft.com/en-us/research/">Microsoft Research Africa</a><br />
+            PhD researcher in Computer Science, <a href="https://www.wits.ac.za/">Wits University</a>
+          </p>
+          <p class="hero-lede">
+            I build and evaluate multilingual AI systems — the tokenization, alignment and benchmarking methods that
+            decide whether language models actually work for African users, not just whether they score well.
+          </p>
+          <div class="hero-links">
+            <a class="pill pill--solid" href="../assets/cv.pdf" download="Millicent-Ochieng-CV.pdf">CV</a>
+            <a class="pill" href="https://scholar.google.com/citations?user=cjJQnDIAAAAJ&amp;hl=en">Scholar</a>
+            <a class="pill" href="https://github.com/millicentochieng">GitHub</a>
+            <a class="pill" href="https://www.linkedin.com/in/millicent-ochieng-b8061a14b/">LinkedIn</a>
+            <a class="pill" href="https://twitter.com/iam_OchiengM">Twitter</a>
+            <a class="pill" href="mailto:millicentochieng950@gmail.com">Email</a>
           </div>
         </div>
-      </nav>
-    </header>
-    <div class="mt-52 mb-10 flex flex-col items-center justify-center">
-      <h1 class="mb-10 text-9xl font-semibold uppercase text-[#a7865e]">
-        Millicent Ochieng
-      </h1>
-      <p class="text-5xl text-[#092b49]">
-        DATA & APPLIED SCIENTIST – Microsoft Africa Research Institute (MARI)
-      </p>
-    </div>
+        <div class="portrait-wrap">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="../assets/portrait-560.webp 560w, ../assets/portrait-1120.webp 1120w"
+              sizes="(max-width: 860px) 150px, 250px"
+            />
+            <img
+              class="portrait"
+              src="../assets/portrait-560.jpg"
+              srcset="../assets/portrait-560.jpg 560w, ../assets/portrait-1120.jpg 1120w"
+              sizes="(max-width: 860px) 150px, 250px"
+              alt="Millicent Ochieng"
+              width="250" height="250" loading="eager" decoding="async"
+            />
+          </picture>
+          <div class="portrait-badge">
+            <div class="l1">Currently</div>
+            <div class="l2">Microsoft Research</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <div class="wrap">
+        <div class="stats">
+          <div class="stat"><div class="n">11</div><div class="l">Publications</div></div>
+          <div class="stat"><div class="n">1</div><div class="l">Outstanding paper</div></div>
+          <div class="stat"><div class="n">400+</div><div class="l">WiDS Kenya community</div></div>
+          <div class="stat"><div class="n">5</div><div class="l">Years at MSR</div></div>
+        </div>
+      </div>
+
+      <!-- RESEARCH -->
+      <section class="wrap section reveal" style="border-top:0">
+        <p class="eyebrow">What I work on</p>
+        <h2>Research &amp; engineering</h2>
+        <p class="lede">
+          I work end to end — from tokenizer internals and evaluation pipelines to human-centered fieldwork with the
+          communities a model is meant to serve.
+        </p>
+        <div class="grid-3">
+          <div class="interest">
+            <h3>Tokenization &amp; LLM efficiency</h3>
+            <p>Improving how models segment text so under-represented languages are encoded fairly — and run cheaper.</p>
+          </div>
+          <div class="interest">
+            <h3>Multicultural alignment</h3>
+            <p>Measuring how models capture cultural variation across communities, using human-centered evaluation.</p>
+          </div>
+          <div class="interest">
+            <h3>Benchmarks &amp; evaluation</h3>
+            <p>Building the datasets and harnesses that make progress on low-resource languages measurable.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PUBLICATIONS -->
+      <section class="wrap section reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>Publications</h2>
+        <p class="lede">Peer-reviewed work at EMNLP, NAACL, LREC and ACL. <a class="arrow" href="./publications.html">See all 11 <span>→</span></a></p>
+        <ul class="pubs">
+          <li class="pub">
+            <div class="pub-venue"><span class="tag">EMNLP</span><span class="pub-year">2026</span></div>
+            <div>
+              <p class="pub-title">Toward Cultural Alignment: Human-Centered Evaluation of Multimodal AI Stories Across Five African Communities</p>
+              <p class="pub-authors"><b>M. Ochieng</b> and co-authors</p>
+            </div>
+          </li>
+          <li class="pub">
+            <div class="pub-venue"><span class="tag">NAACL</span><span class="pub-year">2025</span></div>
+            <div>
+              <p class="pub-title"><a href="https://aclanthology.org/2025.naacl-long.139/">IrokoBench: A New Benchmark for African Languages in the Age of Large Language Models</a></p>
+              <p class="pub-authors">D. I. Adelani, J. Ojo, I. A. Azime, <b>M. Ochieng</b>, S. Hooker and 24 more</p>
+              <span class="pub-award">★ Outstanding Paper Award, NAACL 2025</span>
+            </div>
+          </li>
+          <li class="pub">
+            <div class="pub-venue"><span class="tag">ACL·W</span><span class="pub-year">2024</span></div>
+            <div>
+              <p class="pub-title"><a href="https://arxiv.org/abs/2406.00343">Beyond Metrics: Evaluating LLMs' Effectiveness in Culturally Nuanced, Low-Resource Real-World Scenarios</a></p>
+              <p class="pub-authors"><b>M. Ochieng</b>, V. Gumma, S. Sitaram, J. Wang, K. Bali, J. O'Neill and others</p>
+            </div>
+          </li>
+          <li class="pub">
+            <div class="pub-venue"><span class="tag">NAACL</span><span class="pub-year">2024</span></div>
+            <div>
+              <p class="pub-title"><a href="https://aclanthology.org/2024.naacl-long.143/">MEGAVERSE: Benchmarking Large Language Models Across Languages, Modalities, Models and Tasks</a></p>
+              <p class="pub-authors">S. Ahuja, D. Aggarwal, V. Gumma, <b>M. Ochieng</b> and others</p>
+            </div>
+          </li>
+          <li class="pub">
+            <div class="pub-venue"><span class="tag">EMNLP</span><span class="pub-year">2023</span></div>
+            <div>
+              <p class="pub-title"><a href="https://aclanthology.org/2023.emnlp-main.258/">MEGA: Multilingual Evaluation of Generative AI</a></p>
+              <p class="pub-authors">K. Ahuja, H. Diddee, R. Hada, <b>M. Ochieng</b> and others</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- AWARDS -->
+      <section class="wrap section reveal">
+        <p class="eyebrow">Recognition</p>
+        <h2>Awards &amp; fellowships</h2>
+        <ul class="awards">
+          <li class="award"><span class="y mono">2026</span><span class="t">Schlumberger Foundation Faculty for the Future Fellowship<small>Competitive fellowship for women from low- and middle-income countries in STEM</small></span></li>
+          <li class="award"><span class="y mono">2026</span><span class="t">WiDS High Impact Ambassador, WiDS Worldwide<small>Sustained leadership advancing women in data science and AI</small></span></li>
+          <li class="award"><span class="y mono">2025</span><span class="t">Outstanding Paper Award — IrokoBench, NAACL 2025<small>Outstanding contribution in multilingual and African language NLP</small></span></li>
+          <li class="award"><span class="y mono">2019</span><span class="t">IUCEA Masters Scholarship<small>Awarded as the top candidate in Kenya</small></span></li>
+        </ul>
+      </section>
+
+      <!-- COMMUNITY -->
+      <section class="wrap section reveal">
+        <p class="eyebrow">Beyond the lab</p>
+        <h2>Community &amp; service</h2>
+        <div class="cards">
+          <div class="card">
+            <span class="tag">Lead Ambassador</span>
+            <h3>WiDS Kenya</h3>
+            <p>Leading a 400+ member community advancing gender diversity in data science, and serving on the WiDS Worldwide Ambassador Advisory Council.</p>
+          </div>
+          <div class="card">
+            <span class="tag">Organizer</span>
+            <h3>AfricaNLP</h3>
+            <p>Workshop Organizer &amp; Communications Chair, co-organizing AfricaNLP at EACL 2026.</p>
+          </div>
+          <div class="card">
+            <span class="tag">Member</span>
+            <h3>Masakhane</h3>
+            <p>Advancing multilingual NLP research for low-resource African languages. Also an ACL reviewer since 2023.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="wrap section reveal">
+        <div class="band">
+          <p class="eyebrow">Work with me</p>
+          <h2>Does your AI actually work for African users?</h2>
+          <p>I help teams evaluate and improve multilingual systems — benchmarking, cultural alignment audits, and advisory work grounded in peer-reviewed methods.</p>
+          <div class="hero-links">
+            <a class="pill" href="mailto:millicentochieng950@gmail.com">Get in touch</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="../js/site.js"></script>
   </body>
 </html>

@@ -3,36 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Millicent Ochieng — Research Scientist, Multilingual &amp; Multicultural AI</title>
-    <meta name="description" content="Millicent Ochieng is a Research Scientist at Microsoft Research Africa and a PhD researcher at the University of the Witwatersrand, working on multilingual tokenization, cultural alignment and equitable AI." />
+    <title>Millicent Ochieng — AI Advisor &amp; Research Leader</title>
+    <meta name="description" content="Millicent Ochieng — AI advisor and research leader working on multilingual AI, cultural alignment and equitable AI systems for the Global Majority." />
     <meta name="author" content="Millicent Ochieng" />
-    <meta name="keywords" content="Millicent Ochieng, multilingual NLP, multicultural AI, equitable AI, tokenization, African NLP, Microsoft Research Africa, Masakhane, AfricaNLP, LLM evaluation" />
+    <meta name="keywords" content="Millicent Ochieng, AI advisor, responsible AI, equitable AI, multilingual NLP, multicultural AI, African NLP, LLM evaluation, AI strategy" />
     <link rel="canonical" href="https://millicentochieng.github.io/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Millicent Ochieng — Research Scientist, Multilingual & Multicultural AI" />
-    <meta property="og:description" content="Research Scientist at Microsoft Research Africa and PhD researcher at Wits. Multilingual tokenization, cultural alignment and equitable AI." />
+    <meta property="og:title" content="Millicent Ochieng — AI Advisor & Research Leader" />
+    <meta property="og:description" content="AI advisor and research leader working on multilingual AI, cultural alignment and equitable AI systems for the Global Majority." />
     <meta property="og:url" content="https://millicentochieng.github.io/" />
     <meta property="og:image" content="https://millicentochieng.github.io/src/assets/og-card.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:creator" content="@iam_OchiengM" />
-    <meta name="twitter:title" content="Millicent Ochieng — Research Scientist, Multilingual & Multicultural AI" />
-    <meta name="twitter:description" content="Research Scientist at Microsoft Research Africa and PhD researcher at Wits. Multilingual tokenization, cultural alignment and equitable AI." />
+    <meta name="twitter:title" content="Millicent Ochieng — AI Advisor & Research Leader" />
+    <meta name="twitter:description" content="AI advisor and research leader working on multilingual AI, cultural alignment and equitable AI systems for the Global Majority." />
     <meta name="twitter:image" content="https://millicentochieng.github.io/src/assets/og-card.jpg" />
     <meta name="theme-color" content="#0f5d56" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%8C%8D</text></svg>" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../css/tokens.css" />
     <style>
       /* ---- hero ---- */
       .hero { display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center; padding: 4.5rem 0 3.5rem; }
-      .hero-name { font-size: clamp(2.4rem, 6vw, 3.9rem); }
-      .hero-role { font-size: 1.08rem; color: var(--ink-2); margin: .9rem 0 0; }
-      .hero-role a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); }
-      .hero-lede { font-size: 1rem; color: var(--ink-2); margin: 1rem 0 0; max-width: 58ch; }
+      .hero-name { font-size: clamp(2.4rem, 6vw, 3.9rem); color: var(--accent); font-weight: 700; }
+      .hero-role { font-size: 1.08rem; color: var(--accent); font-weight: 600; margin: .9rem 0 0; line-height: 1.55; }
+      .hero-role a { color: inherit; text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+      .hero-role a:hover { border-bottom-color: var(--accent); }
+      .hero-tags { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .85rem; margin: 1rem 0 0; }
+      .hero-tags span { font-size: .82rem; font-weight: 500; color: var(--ink-2); letter-spacing: .01em; }
+      .hero-tags span + span::before { content: ""; display: inline-block; width: 1px; height: .85em; margin-right: .85rem; vertical-align: -.1em; background: var(--line-strong); }
+      .hero-lede { font-size: 1rem; color: var(--ink-2); margin: 1.1rem 0 0; max-width: 58ch; }
       .hero-links { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.7rem; }
+      .hero-links .pill { border-width: 1.5px; border-color: var(--accent); color: var(--accent); }
+      .hero-links .pill:hover { background: var(--accent); color: var(--on-accent); }
+      .hero-links .pill--solid { background: var(--accent); color: var(--on-accent); }
+      .hero-links .pill--solid:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
       .portrait { width: 250px; height: 250px; border-radius: 20px; object-fit: cover; border: 1px solid var(--line); }
       .portrait-wrap { position: relative; }
       @media (max-width: 860px) {
@@ -52,6 +59,7 @@
       /* ---- grids ---- */
       .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.6rem 2.2rem; margin-top: 2rem; }
       .interest { border-top: 2px solid var(--ink); padding-top: .85rem; }
+      .interest-n { display: block; font-family: var(--font-mono); font-size: 10px; letter-spacing: .12em; color: var(--accent); margin-bottom: .3rem; }
       .interest h3 { font-size: .98rem; margin: 0 0 .35rem; color: var(--ink); }
       .interest p { font-size: .87rem; color: var(--ink-2); margin: 0; }
 
@@ -84,7 +92,7 @@
       .card p { font-size: .86rem; color: var(--ink-2); margin: 0; }
       .band { background: var(--accent); color: var(--on-accent); border-radius: var(--radius); padding: 2.6rem 2.2rem; margin: 1rem 0 0; }
       .band h2 { font-family: var(--font-display); font-size: 1.7rem; margin: .4rem 0 .6rem; color: var(--on-accent); }
-      .band p { color: var(--on-accent); opacity: .92; max-width: 54ch; margin: 0; font-size: .95rem; }
+      .band p { color: var(--on-accent); opacity: .92; max-width: none; margin: 0; font-size: .95rem; }
       .band .eyebrow { color: var(--on-accent); opacity: .8; }
       .band .pill { border-color: color-mix(in srgb, var(--on-accent) 45%, transparent); color: var(--on-accent); }
       .band .pill:hover { background: var(--on-accent); color: var(--accent); border-color: var(--on-accent); }
@@ -97,23 +105,24 @@
       <!-- HERO -->
       <section class="wrap hero">
         <div>
-          <p class="eyebrow">Research Scientist · Nairobi, Kenya</p>
           <h1 class="h-display hero-name">Millicent Ochieng</h1>
           <p class="hero-role">
             Research Scientist, <a href="https://www.microsoft.com/en-us/research/">Microsoft Research Africa</a><br />
-            PhD researcher in Computer Science, <a href="https://www.wits.ac.za/">Wits University</a>
+            PhD Researcher in Computer Science, <a href="https://www.wits.ac.za/">University of the Witwatersrand</a>
+          </p>
+          <p class="hero-tags">
+            <span>AI Advisor &amp; Research Leader</span><span>Responsible &amp; Globally Equitable AI</span>
           </p>
           <p class="hero-lede">
-            I build and evaluate multilingual AI systems — the tokenization, alignment and benchmarking methods that
-            decide whether language models actually work for African users, not just whether they score well.
+            I lead and advise on AI research, strategy, and responsible technology innovation, with a focus on
+            building more equitable AI systems for the Global Majority.
           </p>
           <div class="hero-links">
-            <a class="pill pill--solid" href="../assets/cv.pdf" download="Millicent-Ochieng-CV.pdf">CV</a>
-            <a class="pill" href="https://scholar.google.com/citations?user=cjJQnDIAAAAJ&amp;hl=en">Scholar</a>
-            <a class="pill" href="https://github.com/millicentochieng">GitHub</a>
-            <a class="pill" href="https://www.linkedin.com/in/millicent-ochieng-b8061a14b/">LinkedIn</a>
-            <a class="pill" href="https://twitter.com/iam_OchiengM">Twitter</a>
-            <a class="pill" href="mailto:millicentochieng950@gmail.com">Email</a>
+            <a class="pill pill--solid" href="../assets/cv.pdf" download="Millicent-Ochieng-CV.pdf"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg><span>CV</span></a>
+            <a class="pill" href="https://scholar.google.com/citations?user=cjJQnDIAAAAJ&amp;hl=en"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 1 0 0-14z"/></svg><span>Scholar</span></a>
+            <a class="pill" href="https://github.com/millicentochieng"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>GitHub</span></a>
+            <a class="pill" href="https://www.linkedin.com/in/millicent-ochieng-b8061a14b/"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg><span>LinkedIn</span></a>
+            <a class="pill" href="mailto:millicentochieng950@gmail.com"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><span>Email</span></a>
           </div>
         </div>
         <div class="portrait-wrap">
@@ -135,7 +144,7 @@
         </div>
       </section>
 
-      <!-- STATS -->
+      <!-- STATS — hidden for now; numbers need reviewing before they go back up.
       <div class="wrap">
         <div class="stats">
           <div class="stat"><div class="n">15</div><div class="l">Publications</div></div>
@@ -144,27 +153,42 @@
           <div class="stat"><div class="n">5</div><div class="l">Years at MSR</div></div>
         </div>
       </div>
+      -->
 
       <!-- RESEARCH -->
       <section class="wrap section reveal" style="border-top:0">
         <p class="eyebrow">What I work on</p>
-        <h2>Research &amp; engineering</h2>
-        <p class="lede">
-          I work end to end — from tokenizer internals and evaluation pipelines to human-centered fieldwork with the
-          communities a model is meant to serve.
-        </p>
+        <h2>Research &amp; Advisory Areas</h2>
         <div class="grid-3">
           <div class="interest">
-            <h3>Tokenization &amp; LLM efficiency</h3>
-            <p>Improving how models segment text so under-represented languages are encoded fairly — and run cheaper.</p>
+            <span class="interest-n">01</span>
+            <h3>Applied AI Strategy</h3>
+            <p>Advising organizations on responsible AI adoption, use-case selection, evaluation, governance, and deployment considerations.</p>
           </div>
           <div class="interest">
-            <h3>Multicultural alignment</h3>
-            <p>Measuring how models capture cultural variation across communities, using human-centered evaluation.</p>
+            <span class="interest-n">02</span>
+            <h3>Globally Equitable AI</h3>
+            <p>Advancing AI systems that work more fairly and effectively across languages, cultures, and regions, particularly for the Global Majority.</p>
           </div>
           <div class="interest">
-            <h3>Benchmarks &amp; evaluation</h3>
-            <p>Building the datasets and harnesses that make progress on low-resource languages measurable.</p>
+            <span class="interest-n">03</span>
+            <h3>AI Efficiency</h3>
+            <p>Improving model efficiency through multilingual tokenization, better linguistic representation, and reduced downstream compute and cost.</p>
+          </div>
+          <div class="interest">
+            <span class="interest-n">04</span>
+            <h3>Multicultural AI Alignment</h3>
+            <p>Studying how AI systems represent cultural variation across diverse communities and how alignment can better reflect those differences.</p>
+          </div>
+          <div class="interest">
+            <span class="interest-n">05</span>
+            <h3>AI Safety</h3>
+            <p>Examining model risks across languages and cultures, including misalignment, bias, reliability, and evaluation failures.</p>
+          </div>
+          <div class="interest">
+            <span class="interest-n">06</span>
+            <h3>Datasets &amp; Benchmarks</h3>
+            <p>Building culturally grounded datasets and benchmarks for multilingual, low-resource, and underrepresented African settings.</p>
           </div>
         </div>
       </section>
@@ -222,7 +246,7 @@
       <!-- AWARDS -->
       <section class="wrap section reveal">
         <p class="eyebrow">Recognition</p>
-        <h2>Awards &amp; fellowships</h2>
+        <h2>Awards &amp; Fellowships</h2>
         <ul class="awards">
           <li class="award"><span class="y mono">2026</span><span class="t">Schlumberger Foundation Faculty for the Future Fellowship<small>Competitive fellowship for women from low- and middle-income countries in STEM</small></span></li>
           <li class="award"><span class="y mono">2026</span><span class="t">WiDS High Impact Ambassador, WiDS Worldwide<small>Sustained leadership advancing women in data science and AI</small></span></li>
@@ -234,7 +258,7 @@
       <!-- COMMUNITY -->
       <section class="wrap section reveal">
         <p class="eyebrow">Beyond the lab</p>
-        <h2>Community &amp; service</h2>
+        <h2>Community &amp; Service</h2>
         <div class="cards">
           <div class="card">
             <span class="tag">Lead Ambassador</span>
@@ -258,8 +282,8 @@
       <section class="wrap section reveal">
         <div class="band">
           <p class="eyebrow">Work with me</p>
-          <h2>Does your AI actually work for African users?</h2>
-          <p>I help teams evaluate and improve multilingual systems — benchmarking, cultural alignment audits, and advisory work grounded in peer-reviewed methods.</p>
+          <h2>Looking to collaborate on AI research, strategy, or responsible innovation?</h2>
+          <p>I&rsquo;m open to advisory, consulting, research collaborations, and workshops with organizations and research teams working across diverse AI challenges.</p>
           <div class="hero-links">
             <a class="pill" href="mailto:millicentochieng950@gmail.com">Get in touch</a>
           </div>

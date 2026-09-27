@@ -233,9 +233,8 @@ img { max-width: 100%; display: block; }
 .facts a:hover { text-decoration: underline; }
 
 /* ---------- cards ---------- */
-.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.2rem; margin-top: 2rem; }
-.card { border: 1px solid var(--line); border-radius: var(--radius); padding: 1.3rem; background: var(--surface); transition: border-color .15s; }
-.card:hover { border-color: var(--line-strong); }
-.card h3 { font-size: .98rem; margin: .6rem 0 .3rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.8rem 2rem; margin-top: 2rem; }
+.card { border-top: 2px solid var(--ink); border-radius: 0; padding: .9rem 0 0; background: none; }
+.card h3 { font-size: .98rem; margin: .5rem 0 .3rem; }
 .card p { font-size: .86rem; color: var(--ink-2); margin: 0; }
 .card p a { color: var(--accent); text-decoration: none; }

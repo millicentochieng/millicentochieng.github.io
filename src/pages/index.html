@@ -79,6 +79,9 @@
       /* ---- awards ---- */
       .awards { list-style: none; margin: 2rem 0 0; padding: 0; border-top: 1px solid var(--line); }
       .award { display: grid; grid-template-columns: 78px 1fr; gap: 1.2rem; padding: .95rem 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+      .award:last-child { border-bottom: 0; }
+      .award.grouped { border-bottom: 0; padding-bottom: .2rem; }
+      .award.grouped + .award { padding-top: .2rem; }
       .award .y { font-family: var(--font-mono); font-size: 11px; color: var(--accent); font-variant-numeric: tabular-nums; }
       .award .t { font-size: .94rem; color: var(--ink); }
       .award .t small { display: block; color: var(--ink-3); font-size: .83rem; margin-top: .15rem; }
@@ -236,7 +239,7 @@
         <p class="eyebrow">Recognition</p>
         <h2>Awards &amp; Fellowships</h2>
         <ul class="awards">
-          <li class="award"><span class="y mono">2026</span><span class="t">Schlumberger Foundation Faculty for the Future Fellowship<small>Competitive fellowship for women from low- and middle-income countries in STEM</small></span></li>
+          <li class="award grouped"><span class="y mono">2026</span><span class="t">Schlumberger Foundation Faculty for the Future Fellowship<small>Competitive fellowship for women from low- and middle-income countries in STEM</small></span></li>
           <li class="award"><span class="y mono">2026</span><span class="t">WiDS High Impact Ambassador, WiDS Worldwide<small>Sustained leadership advancing women in data science and AI</small></span></li>
           <li class="award"><span class="y mono">2025</span><span class="t">Outstanding Paper Award for IrokoBench, NAACL 2025<small>Outstanding contribution in multilingual and African language NLP</small></span></li>
           <li class="award"><span class="y mono">2019</span><span class="t">IUCEA Masters Scholarship<small>Awarded as the top candidate in Kenya</small></span></li>

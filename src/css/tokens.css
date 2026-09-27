@@ -207,6 +207,9 @@ img { max-width: 100%; display: block; }
 /* ---------- cv / dated list ---------- */
 .edu { list-style: none; margin: 2rem 0 0; padding: 0; border-top: 1px solid var(--line); }
 .edu li { display: grid; grid-template-columns: 130px 1fr; gap: 1.4rem; padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
+.edu li:last-child { border-bottom: 0; }
+.edu li.grouped { border-bottom: 0; padding-bottom: .25rem; }
+.edu li.grouped + li { padding-top: .25rem; }
 .edu .when { font-family: var(--font-mono); font-size: 11px; color: var(--accent); font-variant-numeric: tabular-nums; padding-top: .2rem; }
 .edu h3 { font-size: 1.02rem; margin: 0 0 .3rem; color: var(--ink); }
 .edu .where { font-size: .88rem; color: var(--ink-2); margin: 0 0 .5rem; }

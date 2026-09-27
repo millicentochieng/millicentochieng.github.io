@@ -42,9 +42,13 @@ files are fetched with `cache: "no-store"`, so they never need a bump.
 
 ## Conventions
 
-- No em dashes or en dashes anywhere in the site copy. Use commas, full stops,
-  or the middle dot for title separators. Date ranges read "Since 2021" or
-  "2019 to 2021".
+- No em dashes used as sentence punctuation. That is the tell that copy was
+  written by AI. Rewrite the sentence with a comma or a full stop instead of
+  swapping the character.
+- Dashes in date ranges are correct and expected: `2021&ndash;present`,
+  `2019 &ndash; 2021`. Leave them alone.
+- Em dashes in page titles are fine: `About &mdash; Millicent Ochieng`.
+- Hyphenated words such as low-resource and Inter-University are fine.
 - No bordered or filled boxes. Cards use a 2px top rule only.
 - Shared component CSS lives in `tokens.css`, never inline in a page.
 - Page width is fixed by `--maxw: 1080px` in `tokens.css`.

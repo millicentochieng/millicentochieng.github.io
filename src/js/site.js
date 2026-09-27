@@ -78,7 +78,7 @@ function renderFooter() {
   return `
   <footer class="footer footer--min">
     <div class="wrap copyright">
-      <span>&copy; 2021 to present, Millicent Ochieng.</span>
+      <span>&copy; 2021&ndash;present Millicent Ochieng.</span>
       <span class="footer-social">${links}</span>
     </div>
   </footer>`;

@@ -7,9 +7,9 @@ const NAV = [
   { href: "./index.html", label: "Home" },
   { href: "./about.html", label: "About" },
   { href: "./publications.html", label: "Publications" },
-  { href: "./education.html", label: "Education" },
   { href: "./community.html", label: "Community" },
   { href: "./news.html", label: "News" },
+  { href: "./cv.html", label: "CV" },
 ];
 
 const SOCIAL = {
@@ -47,10 +47,8 @@ function renderNav() {
   return `
   <header class="nav">
     <div class="wrap nav-in">
-      <a class="brand" href="./index.html"><span class="mark">MO</span> Millicent Ochieng</a>
       <nav class="nav-links" id="navLinks">
         ${links}
-        <a href="${SOCIAL.cv}" download="Millicent-Ochieng-CV.pdf">CV</a>
       </nav>
       <div style="display:flex;gap:.5rem;align-items:center">
         <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">

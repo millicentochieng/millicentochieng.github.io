@@ -214,6 +214,14 @@ img { max-width: 100%; display: block; }
 .edu .detail a { color: var(--accent); text-decoration: none; }
 @media (max-width: 640px) { .edu li { grid-template-columns: 1fr; gap: .4rem; } }
 
+/* ---------- band ---------- */
+.band { background: var(--accent); color: var(--on-accent); border-radius: var(--radius); padding: 2.6rem 2.2rem; margin: 1rem 0 0; }
+.band h2 { font-family: var(--font-display); font-size: 1.7rem; margin: .4rem 0 .6rem; color: var(--on-accent); }
+.band p { color: var(--on-accent); opacity: .92; max-width: none; margin: 0; font-size: .95rem; }
+.band .eyebrow { color: var(--on-accent); opacity: .8; }
+.band .pill { border-color: color-mix(in srgb, var(--on-accent) 45%, transparent); color: var(--on-accent); }
+.band .pill:hover { background: var(--on-accent); color: var(--accent); border-color: var(--on-accent); }
+
 /* ---------- fact list ---------- */
 .facts { list-style: none; margin: 0; padding: 0; }
 .facts li { padding: .7rem 0; border-bottom: 1px solid var(--line); }
